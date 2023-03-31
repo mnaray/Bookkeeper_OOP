@@ -72,15 +72,9 @@ const config = {
                     },
                     {
                         type: "doc",
-                        docId: "Anleitung",
+                        docId: "Klassen",
                         position: "left",
-                        label: "Anleitung"
-                    },
-                    {
-                        type: "doc",
-                        docId: "Lösungen",
-                        position: "left",
-                        label: "Lösungen"
+                        label: "Klassendokumentation"
                     },
                     {
                         href: "https://github.com/mnaray/Bookkeeper_OOP",
@@ -93,19 +87,15 @@ const config = {
                 style: "dark",
                 links: [
                     {
-                        title: "Doku",
+                        title: "Dokumentation",
                         items: [
                             {
                                 label: "Projektdokumentaion",
                                 to: "/docs/Dokumentation"
                             },
                             {
-                                label: "Anleitung",
-                                to: "/docs/Anleitung"
-                            },
-                            {
-                                label: "Lösungen",
-                                to: "/docs/Lösungen"
+                                label: "Klassendokumentation",
+                                to: "/docs/Klassen"
                             }
                         ]
                     },
