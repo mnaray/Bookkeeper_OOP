@@ -54,16 +54,15 @@ Hier sind alle Quellen aufgelistet, welche während dem Aublauf des Projekts als
 ### Arbeitspakete
 
 
-| Nr. | Frist      | Beschreibung                                                                | Geplante Zeit in Paketen |
-| ----- | ------------ | :---------------------------------------------------------------------------- | -------------------------- |
-| 1   | 24.02.2023 | Informieren (von IPERKA)                                                    | 20                       |
-| 2   | 10.03.2023 | Planen und Entscheiden (von IPERKA)                                         | 15                       |
-| 3   | 10.03.2023 | Realisieren (von IPERKA): Konzept beschreiben                               | 4                        |
-| 4   | 17.03.2023 | Realisieren (von IPERKA): PoC erstellen (Programmieren)                     | 11                       |
-| 5   | 17.03.2023 | Realisieren (von IPERKA): Docker-Images erstellen & in eine Registry pushen | 2                        |
-| 6   | 24.03.2023 | Kontrollieren (von IPERKA)                                                  | 2                        |
-| 7   | 24.03.2023 | Auswerten (von IPERKA)                                                      | 2                        |
-| 8   | 24.03.2023 | Portfolioeintrag bis am Abend                                               | 6 (ggf. mehr)            |
+| Nr. | Frist      | Beschreibung                                                   | Geplante Zeit in Paketen |
+| ----- | ------------ | :--------------------------------------------------------------- | -------------------------- |
+| 1   | 28.04.2023 | Informieren (von IPERKA): vor allem über Design Patterns      | 5 (ggf. mehr)            |
+| 2   | 28.04.2023 | Planen und Entscheiden (von IPERKA): Tests erstellen           | 2                        |
+| 3   | 28.04.2023 | Planen und Entscheiden (von IPERKA): Klassendiagramm erstellen | 3                        |
+| 4   | 12.05.2023 | Realisieren (von IPERKA): Klassen ausprogrammieren             | 10                       |
+|     | 26.05.2023 | Kontrollieren (von IPERKA)                                     | 3                        |
+|     | 26.05.2023 | Auswerten (von IPERKA)                                         | 2                        |
+|     | 02.06.2023 | Portfolioeintrag bis am Abend                                  | 3 (ggf. mehr)            |
 
 :::info
 
@@ -71,9 +70,9 @@ Hier sind alle Quellen aufgelistet, welche während dem Aublauf des Projekts als
 
 1x Halbtag = 5x Arbeitspakete
 
-6x Halbtage = 30x Arbeitspakete
+5x Halbtage = 25x Arbeitspakete
 
-30x Arbeitspakete * 2x Mitglieder + 6x Portfolio (3/Mitglied)= **60x Arbeitspakete**
+25x Arbeitspakete + 3x Portfolio = **28x Arbeitspakete**
 
 :::
 
