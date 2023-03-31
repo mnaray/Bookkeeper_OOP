@@ -19,7 +19,7 @@ const FeatureList: FeatureItem[] = [
                     IPERKA-Workflow
                 </a>{" "}
                 umgesetzt und entsprechend begleitend{" "}
-                <a href="/CaptureTheFlag/docs/Dokumentation">dokumentiert</a>.
+                <a href="/Bookkeeper_OOP/docs/Dokumentation">dokumentiert</a>.
             </>
         )
     },
@@ -28,10 +28,9 @@ const FeatureList: FeatureItem[] = [
         Svg: require("@site/static/img/lightbulb.svg").default,
         description: (
             <>
-                Falls es dazu kommen soll, dass man an einer Stelle stecken bleibt, sind{" "}
-                <a href="/CaptureTheFlag/docs/Lösungen">Lösungen</a> vorhanden. Diese sollen aber
-                nur wirklich im Fall der Fälle verwendet werden, um den eigentlichen Sinn dieses
-                Spiels nicht zu verderben.
+                Die einzelnen Klassen der Applikation sind in der{" "}
+                <a href="/Bookkeeper_OOP/docs/Klassen">Klassendokumentation</a> ersichtlich. Jede
+                Klasse wird beschrieben und ihre Funktion wird erläutert.
             </>
         )
     }
