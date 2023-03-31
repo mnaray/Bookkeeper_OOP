@@ -24,18 +24,7 @@ const FeatureList: FeatureItem[] = [
         )
     },
     {
-        title: "Anleitung",
-        Svg: require("@site/static/img/step.svg").default,
-        description: (
-            <>
-                Es ist eine{" "}
-                <a href="/CaptureTheFlag/docs/Anleitung">Schrit-für-Schritt-Anleitung</a> für einen
-                schnellen Start mit inbegriffen.
-            </>
-        )
-    },
-    {
-        title: "Lösungen",
+        title: "Klassen",
         Svg: require("@site/static/img/lightbulb.svg").default,
         description: (
             <>
@@ -66,7 +55,7 @@ export default function HomepageFeatures(): JSX.Element {
     return (
         <section className={styles.features}>
             <div className="container">
-                <div className="row">
+                <div className={styles.featuresCenter}>
                     {FeatureList.map((props, idx) => (
                         <Feature key={idx} {...props} />
                     ))}

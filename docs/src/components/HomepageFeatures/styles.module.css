@@ -9,3 +9,10 @@
     height: inherit;
     width: inherit;
 }
+
+.featuresCenter {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 calc(var(--ifm-spacing-horizontal) * -1);
+}
