@@ -60,9 +60,9 @@ Hier sind alle Quellen aufgelistet, welche während dem Aublauf des Projekts als
 | 2   | 28.04.2023 | Planen und Entscheiden (von IPERKA): Tests erstellen           | 2                        |
 | 3   | 28.04.2023 | Planen und Entscheiden (von IPERKA): Klassendiagramm erstellen | 3                        |
 | 4   | 12.05.2023 | Realisieren (von IPERKA): Klassen ausprogrammieren             | 10                       |
-|     | 26.05.2023 | Kontrollieren (von IPERKA)                                     | 3                        |
-|     | 26.05.2023 | Auswerten (von IPERKA)                                         | 2                        |
-|     | 02.06.2023 | Portfolioeintrag bis am Abend                                  | 3 (ggf. mehr)            |
+| 5   | 26.05.2023 | Kontrollieren (von IPERKA)                                     | 3                        |
+| 6   | 26.05.2023 | Auswerten (von IPERKA)                                         | 2                        |
+| 7   | 02.06.2023 | Portfolioeintrag bis am Abend                                  | 3 (ggf. mehr)            |
 
 :::info
 
@@ -79,16 +79,15 @@ Hier sind alle Quellen aufgelistet, welche während dem Aublauf des Projekts als
 ### Ausführung
 
 
-| Nr. | Frist      | Bemerkung                                                                                                                                                                                                    | Zeit geplant | Zeit effektiv |
-| ----- | ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | --------------- |
-| 1   | 24.02.2023 |                                                                                                                                                                                                              | 20           | 20            |
-| 2   | 10.03.2023 |                                                                                                                                                                                                              | 15           | 15            |
-| 3   | 10.03.2023 | Die Konzeptbeschreibung war viel schneller als gedacht, weil wir bei der Entscheidung schon vieles beschrieben haben. Wir mussten uns somit bei der Konzeptbeschreibung keine Gedanken mehr darüber machen. | 4            | 1             |
-| 4   | 17.03.2023 | Hier ist das Programmieren des Bruteforce-Containers sehr schnell gegangen. Wir haben den Schwierigkeitsgrad von dem etwas überschätzt.                                                                    | 11           | 8             |
-| 5   | 17.03.2023 |                                                                                                                                                                                                              | 2            | 5             |
-| 6   | 24.03.2023 |                                                                                                                                                                                                              | 2            | 2             |
-| 7   | 24.03.2023 |                                                                                                                                                                                                              | 2            | 2             |
-| 8   | 24.03.2023 |                                                                                                                                                                                                              | 6            | 6             |
+| Nr. | Frist      | Bemerkung | Zeit geplant | Zeit effektiv |
+| ----- | ------------ | ----------- | -------------- | --------------- |
+| 1   | 28.04.2023 |           | 5            |               |
+| 2   | 28.04.2023 |           | 2            |               |
+| 3   | 28.04.2023 |           | 3            |               |
+| 4   | 12.05.2023 |           | 10           |               |
+| 5   | 26.05.2023 |           | 3            |               |
+| 6   | 26.05.2023 |           | 2            |               |
+| 7   | 02.06.2023 |           | 3            |               |
 
 ### Testfälle
 
