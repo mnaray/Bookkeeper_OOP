@@ -23,7 +23,7 @@ In diesem Kapitel der Dokumentation wird die Phase festgehalten, in welcher ich 
 In der folgenden Tabelle sind die Anforderungen für das Projekt vorzufinden.
 
 
-| Nr. | Muss/Kann | funk./qual. | Beschreibung |
+| Nr. | Muss/<br />Kann | funk./<br />qual. | Beschreibung |
 | ----- | ----------- | ------------- | -------------- |
 | 1   |           |             |              |
 | 2   |           |             |              |
