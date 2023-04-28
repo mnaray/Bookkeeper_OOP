@@ -23,18 +23,23 @@ In diesem Kapitel der Dokumentation wird die Phase festgehalten, in welcher ich 
 In der folgenden Tabelle sind die Anforderungen für das Projekt vorzufinden.
 
 
-| Nr. | Muss/<br />Kann | funk./<br />qual. | Beschreibung |
-| ----- | ----------- | ------------- | -------------- |
-| 1   |           |             |              |
-| 2   |           |             |              |
-| 3   |           |             |              |
-| 4   |           |             |              |
-| 5   |           |             |              |
-| 6   |           |             |              |
-| 7   |           |             |              |
-| 8   |           |             |              |
-| 9   |           |             |              |
-| 10  |           |             |              |
+| Nr. | Muss/<br />Kann | funk./<br />qual./ rand | Beschreibung                                                                                        |
+| ----- | ----------------- | ------------------------- | ----------------------------------------------------------------------------------------------------- |
+| 1   | M               | funk.                   | Die Software muss eine Bilanz nach dem KMU-Kontenrahmen haben.                                      |
+| 2   | M               | funk.                   | Die Software muss eine Erfolgsrechnung nach dem KMU-Kontenrahmen haben.                             |
+| 3   | M               | funk.                   | Die Software muss Buchungssätze ausführen können und dabei die betroffenen Konten aktualisieren. |
+| 4   | M               | funk.                   | Ein Buchungssatz muss Buchungstext, Soll-Konto, Haben-Konto und Betrag umfassen.                    |
+| 5   | M               | funk.                   | Alle gebuchten Buchungssätze müssen in einer Datenbank gespeichert werden.                        |
+| 6   | M               | funk.                   | Die Bilanz muss in einer Datenbank festgehalten werden.                                             |
+| 7   | M               | funk.                   | Die Software muss über die Kommandozeile bedienbar sein.                                           |
+| 8   | K               | qual.                   | Es soll einen Hilfe-Befehl haben, der alle möglichen Befehle auflistet und erklärt.               |
+| 9   | K               | qual.                   | Jeder Befehl soll eine kleine Erklärung dazu haben.                                                |
+| 10  | M               | funk.                   | Es braucht einen Befehl, um Buchungssätze zu bilden.                                               |
+| 11  | M               | funk.                   | Es braucht einen Befehl, um die Bilanz auszugeben.                                                  |
+| 12  | M               | funk.                   | Es braucht einen Befehl, um die Erfolgsrechnung auszugeben.                                         |
+| 13  | M               | rand                    | Es muss ein Klassendiagramm in UML vorhanden sein.                                                  |
+| 14  | M               | rand                    | Die Software soll nach dem MVC-Konzept aufgebaut sein.                                              |
+| 15  | M               | rand                    | Diese erste Version soll vollständig auf Englisch sein.                                            |
 
 ### Technologien
 
@@ -42,12 +47,15 @@ Für dieses Projekt habe ich folgende Technologien verwendet:
 
 - [.NET 6.0](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
 - [C#](https://de.wikipedia.org/wiki/C-Sharp)
+- [SQLite](https://sqlite.org/index.html)
 
 ### Quellen
 
 Hier sind alle Quellen aufgelistet, welche während dem Aublauf des Projekts als Hilfe oder Orientation verwendet wurden.
 
 - [Design Patterns](https://refactoring.guru/design-patterns)
+- [SQLite offizielle Doku](https://sqlite.org/docs.html)
+- [Anwendung von SQLite in einer C# App](https://www.codeguru.com/dotnet/using-sqlite-in-a-c-application/)
 
 ## Planen
 
@@ -79,15 +87,15 @@ Hier sind alle Quellen aufgelistet, welche während dem Aublauf des Projekts als
 ### Ausführung
 
 
-| Nr. | Frist      | Bemerkung | Zeit geplant | Zeit effektiv |
-| ----- | ------------ | ----------- | -------------- | --------------- |
-| 1   | 28.04.2023 |           | 5            |               |
-| 2   | 28.04.2023 |           | 2            |               |
-| 3   | 28.04.2023 |           | 3            |               |
-| 4   | 12.05.2023 |           | 10           |               |
-| 5   | 26.05.2023 |           | 3            |               |
-| 6   | 26.05.2023 |           | 2            |               |
-| 7   | 02.06.2023 |           | 3            |               |
+| Nr. | Frist      | Bemerkung                            | Zeit geplant | Zeit effektiv |
+| ----- | ------------ | -------------------------------------- | -------------- | --------------- |
+| 1   | 28.04.2023 | Zusätzlich in SQLite eingearbeitet. | 5            | 7             |
+| 2   | 28.04.2023 |                                      | 2            |               |
+| 3   | 28.04.2023 |                                      | 3            |               |
+| 4   | 12.05.2023 |                                      | 10           |               |
+| 5   | 26.05.2023 |                                      | 3            |               |
+| 6   | 26.05.2023 |                                      | 2            |               |
+| 7   | 02.06.2023 |                                      | 3            |               |
 
 ### Testfälle
 
@@ -106,6 +114,13 @@ Hier sind alle Quellen aufgelistet, welche während dem Aublauf des Projekts als
   * Version 1.2.3
 
 ## Entscheiden
+
+### Welches DBMS?
+
+Für diesen Anwendungszweck würde sich definitiv ein SQL-DBMS eignen.
+Die Software muss zur Zeit nicht gross skaliert werden, da sie lokal laufen wird. Es werden auch immer wieder dieselben Daten verwendet, zum Beispiel die Konten aus dem Kontenrahmen. Diese Werte könnten möglicherweise in eine zugewiesene Tabelle.
+
+Es gibt auch diverse SQL-DBMS, die sicher funktionieren würden. Am geignetsten wäre aber ganz sicher [SQLite](https://sqlite.org/index.html). Dieses DBMS, weil sie mit der Software geliefert werden kann und einfach gehalten ist. Der einzige Nachteil wäre die Untauglichkeit für Multiuser-Anwendungen, dies schränkt mich hier aber nicht ein.
 
 ## Realisieren
 
