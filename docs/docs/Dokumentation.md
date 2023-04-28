@@ -12,11 +12,17 @@ In diesem Projekt erstelle ich ein eine Buchhaltungsawendung, welche einfache Bu
 
 ## Informieren
 
-In diesem Kapitel der Dokumentation wird die Phase festgehalten, in welcher ich mich über das alles Nötige informiere. Dazu gehören auch die Anforderungen, die Zeiteinteilung und die Auflistung [**aller verwendeten Quellen**](#quellen).
+In diesem Kapitel der Dokumentation wird die Phase festgehalten, in welcher ich mich über alles Nötige informiere. Dazu gehören auch die Anforderungen, die Zeiteinteilung und die Auflistung [**aller verwendeten Quellen**](#quellen).
 
-### Was verstehe ich unter Design Patterns?
+### Was versteht man unter Design Patterns?
+
+Design Patterns sind bewährte Lösungsansätze für häufig auftretende Probleme in der Softwareentwicklung. Sie bieten Entwicklern eine strukturierte Herangehensweise zur Lösung dieser Probleme. Sie helfen bei der Entwicklung von effizienter, wartbarer und flexibler Software. Unter anderem wird auch die Wiederverwendbarkeit und Erweiterbarkeit von Code mit ihnen verbessert.
 
 ### Was ist mein Ziel?
+
+Es ist in diesem Projekt mein Ziel, eine einfache, funktionsfähige Buchhaltungsapplikation für die Kommandozeile zu gestalten und diese dann zu implementieren.
+
+Dabei möchte ich grundlegende Design Patterns in der objektorientierten Programmierung anwenden. So soll der Code einfach Erweiterbar und wartbarer werden. Dies ist mir wichtig, da ich ggf. in zukünftigen Projekten auf diese Anwendung aufbauen möchte.
 
 ### Anforderungen
 
