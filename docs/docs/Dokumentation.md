@@ -22,19 +22,23 @@ In diesem Kapitel der Dokumentation wird die Phase festgehalten, in welcher ich 
 
 In der folgenden Tabelle sind die Anforderungen für das Projekt vorzufinden.
 
-
-| Nr. | Muss/<br />Kann | funk./<br />qual. | Beschreibung |
-| ----- | ----------- | ------------- | -------------- |
-| 1   |           |             |              |
-| 2   |           |             |              |
-| 3   |           |             |              |
-| 4   |           |             |              |
-| 5   |           |             |              |
-| 6   |           |             |              |
-| 7   |           |             |              |
-| 8   |           |             |              |
-| 9   |           |             |              |
-| 10  |           |             |              |
+| Nr. | Muss/<br />Kann | funk./<br />qual./ rand | Beschreibung                                                                                        |
+| ----- | ----------------- | ------------------------- | ----------------------------------------------------------------------------------------------------- |
+| 1   | M               | funk.                   | Die Software muss eine Bilanz nach dem KMU-Kontenrahmen haben.                                      |
+| 2   | M               | funk.                   | Die Software muss eine Erfolgsrechnung nach dem KMU-Kontenrahmen haben.                             |
+| 3   | M               | funk.                   | Die Software muss Buchungssätze ausführen können und dabei die betroffenen Konten aktualisieren. |
+| 4   | M               | funk.                   | Ein Buchungssatz muss Buchungstext, Soll-Konto, Haben-Konto und Betrag umfassen.                    |
+| 5   | M               | funk.                   | Alle gebuchten Buchungssätze müssen in einer No-SQL Datenbank gespeichert werden.                 |
+| 6   | M               | funk.                   | Die Bilanz muss in einer No-SQL Datenbank festgehalten werden.                                      |
+| 7   | M               | funk.                   | Die Software muss über die Kommandozeile bedienbar sein.                                           |
+| 8   | K               | qual.                   | Es soll einen Hilfe-Befehl haben, der alle möglichen Befehle auflistet und erklärt.               |
+| 9   | K               | qual.                   | Jeder Befehl soll eine kleine Erklärung dazu haben.                                                |
+| 10  | M               | funk.                   | Es braucht einen Befehl, um Buchungssätze zu bilden.                                               |
+| 11  | M               | funk.                   | Es braucht einen Befehl, um die Bilanz auszugeben.                                                  |
+| 12  | M               | funk.                   | Es braucht einen Befehl, um die Erfolgsrechnung auszugeben.                                         |
+| 13  | M               | rand                    | Es muss ein Klassendiagramm in UML vorhanden sein.                                                  |
+| 14  | M               | rand                    | Die Software soll nach dem MVC-Konzept aufgebaut sein.                                              |
+| 15  | M               | rand                    | Diese erste Version soll vollständig auf Englisch sein.                                            |
 
 ### Technologien
 
