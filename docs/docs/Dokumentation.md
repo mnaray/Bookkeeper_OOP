@@ -20,6 +20,10 @@ Design Patterns sind bewährte Lösungsansätze für häufig auftretende Problem
 
 ### Was ist mein Ziel?
 
+Es ist in diesem Projekt mein Ziel, eine einfache, funktionsfähige Buchhaltungsapplikation für die Kommandozeile zu gestalten und diese dann zu implementieren.
+
+Dabei möchte ich grundlegende Design Patterns in der objektorientierten Programmierung anwenden. So soll der Code einfach Erweiterbar und wartbarer werden. Dies ist mir wichtig, da ich ggf. in zukünftigen Projekten auf diese Anwendung aufbauen möchte.
+
 ### Anforderungen
 
 In der folgenden Tabelle sind die Anforderungen für das Projekt vorzufinden.
