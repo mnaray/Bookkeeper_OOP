@@ -119,6 +119,18 @@ Hier sind alle Quellen aufgelistet, welche während dem Aublauf des Projekts als
 * AB
   * Version 1.2.3
 
+### Architektur
+
+#### Klassendiagramm
+
+**HIER KOMMT NOCH EIN BILD VOM FERTIGEN DIAGRAMM HIN!!!**
+
+#### Klassendokumentation
+
+In der Klassendokumentation werden die Klassen aus dem Diagramm noch ein Mal genauer Dokumentiert. Es wird erklärt für was sie zuständig sind und welche Felder, Eigentschaften und Methoden sie haben.
+
+Die Klassendokumentation ist [auf dieser Seite](Klassen.md) vorzufinden.
+
 ## Entscheiden
 
 ### Welches DBMS?
