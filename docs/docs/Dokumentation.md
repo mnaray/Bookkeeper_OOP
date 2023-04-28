@@ -12,7 +12,7 @@ In diesem Projekt erstelle ich ein eine Buchhaltungsawendung, welche einfache Bu
 
 ## Informieren
 
-In diesem Kapitel der Dokumentation wird die Phase festgehalten, in welcher ich mich über das alles Nötige informiere. Dazu gehören auch die Anforderungen, die Zeiteinteilung und die Auflistung [**aller verwendeten Quellen**](#quellen).
+In diesem Kapitel der Dokumentation wird die Phase festgehalten, in welcher ich mich über alles Nötige informiere. Dazu gehören auch die Anforderungen, die Zeiteinteilung und die Auflistung [**aller verwendeten Quellen**](#quellen).
 
 ### Was verstehe ich unter Design Patterns?
 
