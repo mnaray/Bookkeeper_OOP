@@ -34,7 +34,7 @@ In der folgenden Tabelle sind die Anforderungen für das Projekt vorzufinden.
 | 1   | M               | funk.                   | Die Software muss eine Bilanz nach dem KMU-Kontenrahmen haben.                                      |
 | 2   | M               | funk.                   | Die Software muss eine Erfolgsrechnung nach dem KMU-Kontenrahmen haben.                             |
 | 3   | M               | funk.                   | Die Software muss Buchungssätze ausführen können und dabei die betroffenen Konten aktualisieren. |
-| 4   | M               | funk.                   | Ein Buchungssatz muss Buchungstext, Soll-Konto, Haben-Konto und Betrag umfassen.                    |
+| 4   | M               | funk.                   | Ein Buchungssatz muss Datum, Buchungstext, Soll-Konto, Haben-Konto und Betrag umfassen.             |
 | 5   | M               | funk.                   | Alle gebuchten Buchungssätze müssen in einer Datenbank gespeichert werden.                        |
 | 6   | M               | funk.                   | Die Bilanz muss in einer Datenbank festgehalten werden.                                             |
 | 7   | M               | funk.                   | Die Software muss über die Kommandozeile bedienbar sein.                                           |
