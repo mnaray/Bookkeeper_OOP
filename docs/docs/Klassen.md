@@ -62,6 +62,45 @@ Diese Klasse ist für die Initialisierung des eigentlichen Programms zuständig.
 
 ## Model Namespace
 
+### DbConnection
+
+#### Zusammenfassung
+
+Dise Klasse erstellt ein Singleton-Objekt. Somit kann immer und überall auf die Verbindung zur Datenbank zugegriffen werden. Es können auch nicht versehentlich zwei Verbindungen mit der Datenbank entstehen.
+
+#### Superklasse
+
+*keine*
+
+#### Interfaces
+
+*keine*
+
+#### Felder
+
+ - **private static DbConnection _instance**
+   - Enthält eine statische Instanz von der eigenen Klasse.
+
+#### Eigenschaften
+
+*keine*
+
+#### Methoden
+
+- **private DbConnection()**
+  - Ist der private Konstruktor, der das Singleton-Pattern ermöglicht.
+  - Erstellt ein neues Objekt der Klasse DbConnection.
+- **public static DbConnection GetInstance()**
+  - Ruft den Konstruktor ab, falls *_instance* noch null ist.
+  - Gibt das Objekt in *_instance* zurück.
+- **public void ExecuteQuery(string query)**
+  - Nimmt einen String als Parameter.
+  - Durchgepasster Parameter wird über die Verbindung als SQL-Befehl ausgeführt.
+
+#### Subklassen
+
+*keine*
+
 ## View Namespace
 
 ## Controller Namespace
