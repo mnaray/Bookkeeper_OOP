@@ -96,7 +96,7 @@ Hier sind alle Quellen aufgelistet, welche während dem Aublauf des Projekts als
 
 | Nr. | Frist      | Bemerkung                            | Zeit geplant | Zeit effektiv |
 | ----- | ------------ | -------------------------------------- | -------------- | --------------- |
-| 1   | 28.04.2023 | Zusätzlich in SQLite eingearbeitet. | 5            | 7             |
+| 1   | 28.04.2023 | Zusätzlich in SQLite eingearbeitet. | 5            | 8             |
 | 2   | 28.04.2023 |                                      | 2            |               |
 | 3   | 28.04.2023 |                                      | 3            |               |
 | 4   | 12.05.2023 |                                      | 10           |               |
