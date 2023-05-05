@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="14.3.0">
   <help_text/>
-  <zoom_level>8</zoom_level>
+  <zoom_level>6</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>336</x>
-      <y>1056</y>
-      <w>200</w>
-      <h>56</h>
+      <x>1110</x>
+      <y>0</y>
+      <w>150</w>
+      <h>42</h>
     </coordinates>
     <panel_attributes>Entrypoint
 --
@@ -19,10 +19,10 @@ _Main(args: string[]): void_
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>744</x>
-      <y>440</y>
-      <w>552</w>
-      <h>432</h>
+      <x>882</x>
+      <y>330</y>
+      <w>414</w>
+      <h>324</h>
     </coordinates>
     <panel_attributes>Controller
 --</panel_attributes>
@@ -31,10 +31,10 @@ _Main(args: string[]): void_
   <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>680</x>
-      <y>984</y>
-      <w>80</w>
-      <h>96</h>
+      <x>846</x>
+      <y>708</y>
+      <w>60</w>
+      <h>72</h>
     </coordinates>
     <panel_attributes>Nutzer
 (Buchhalter)</panel_attributes>
@@ -43,25 +43,49 @@ _Main(args: string[]): void_
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>168</x>
-      <y>440</y>
-      <w>552</w>
-      <h>432</h>
+      <x>672</x>
+      <y>0</y>
+      <w>414</w>
+      <h>324</h>
     </coordinates>
-    <panel_attributes>View
+    <panel_attributes>Model
 --</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>448</x>
-      <y>0</y>
-      <w>552</w>
-      <h>432</h>
+      <x>462</x>
+      <y>330</y>
+      <w>414</w>
+      <h>324</h>
     </coordinates>
-    <panel_attributes>Model
+    <panel_attributes>View
 --</panel_attributes>
     <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>840</x>
+      <y>648</y>
+      <w>54</w>
+      <h>78</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+outputs</panel_attributes>
+    <additional_attributes>40.0;110.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>882</x>
+      <y>648</y>
+      <w>54</w>
+      <h>78</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+intputs</panel_attributes>
+    <additional_attributes>50.0;10.0;10.0;110.0</additional_attributes>
   </element>
 </diagram>
