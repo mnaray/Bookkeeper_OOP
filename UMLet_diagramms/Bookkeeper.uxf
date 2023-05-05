@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="14.3.0">
   <help_text/>
-  <zoom_level>12</zoom_level>
+  <zoom_level>8</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1296</x>
-      <y>48</y>
-      <w>420</w>
-      <h>96</h>
+      <x>1096</x>
+      <y>128</y>
+      <w>280</w>
+      <h>64</h>
     </coordinates>
     <panel_attributes>Entrypoint
 --
@@ -22,10 +22,10 @@ _- ExecuteScript(SQLiteConnection connection): void_
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>840</x>
-      <y>708</y>
-      <w>828</w>
-      <h>648</h>
+      <x>792</x>
+      <y>568</y>
+      <w>552</w>
+      <h>432</h>
     </coordinates>
     <panel_attributes>Controller
 --</panel_attributes>
@@ -34,10 +34,10 @@ _- ExecuteScript(SQLiteConnection connection): void_
   <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>768</x>
-      <y>1464</y>
-      <w>120</w>
-      <h>144</h>
+      <x>744</x>
+      <y>1072</y>
+      <w>80</w>
+      <h>96</h>
     </coordinates>
     <panel_attributes>Nutzer
 (Buchhalter)</panel_attributes>
@@ -46,10 +46,10 @@ _- ExecuteScript(SQLiteConnection connection): void_
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>0</x>
-      <y>48</y>
-      <w>1284</w>
-      <h>648</h>
+      <x>232</x>
+      <y>128</y>
+      <w>856</w>
+      <h>432</h>
     </coordinates>
     <panel_attributes>Model
 --</panel_attributes>
@@ -58,10 +58,10 @@ _- ExecuteScript(SQLiteConnection connection): void_
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>0</x>
-      <y>708</y>
-      <w>828</w>
-      <h>648</h>
+      <x>232</x>
+      <y>568</y>
+      <w>552</w>
+      <h>432</h>
     </coordinates>
     <panel_attributes>View
 --</panel_attributes>
@@ -70,10 +70,10 @@ _- ExecuteScript(SQLiteConnection connection): void_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>756</x>
-      <y>1344</y>
-      <w>108</w>
-      <h>156</h>
+      <x>736</x>
+      <y>992</y>
+      <w>72</w>
+      <h>104</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 outputs</panel_attributes>
@@ -82,10 +82,10 @@ outputs</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>840</x>
-      <y>1344</y>
-      <w>108</w>
-      <h>156</h>
+      <x>792</x>
+      <y>992</y>
+      <w>72</w>
+      <h>104</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 intputs</panel_attributes>
@@ -94,10 +94,10 @@ intputs</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>540</x>
-      <y>324</y>
-      <w>264</w>
-      <h>300</h>
+      <x>592</x>
+      <y>312</y>
+      <w>176</w>
+      <h>200</h>
     </coordinates>
     <panel_attributes>Buchungssatz
 --
@@ -120,10 +120,10 @@ intputs</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>444</x>
-      <y>72</y>
-      <w>360</w>
-      <h>240</h>
+      <x>528</x>
+      <y>144</y>
+      <w>240</w>
+      <h>160</h>
     </coordinates>
     <panel_attributes>&lt;&lt;abstract&gt;&gt;
 Konto
@@ -134,7 +134,7 @@ Konto
 + KontoId: int
 + Kontoname: string
 --
-+ Konto(): Konto
++ Konto(kontoId: int, kontoName: string): Konto
 /+ TaetigeSollBuchung(decimal betrag): void/
 /+ TaetigeHabenBuchung(decimal betrag): void/
 /+ BerechneSaldo(): decimal/</panel_attributes>
@@ -143,10 +143,10 @@ Konto
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>900</x>
-      <y>228</y>
-      <w>360</w>
-      <h>144</h>
+      <x>832</x>
+      <y>248</y>
+      <w>240</w>
+      <h>96</h>
     </coordinates>
     <panel_attributes>PassivKonto
 --
@@ -161,10 +161,10 @@ Konto
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>24</x>
-      <y>132</y>
-      <w>408</w>
-      <h>120</h>
+      <x>248</x>
+      <y>184</y>
+      <w>272</w>
+      <h>80</h>
     </coordinates>
     <panel_attributes>Bilanz
 --
@@ -179,10 +179,10 @@ Konto
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>900</x>
-      <y>72</y>
-      <w>360</w>
-      <h>144</h>
+      <x>832</x>
+      <y>144</y>
+      <w>240</w>
+      <h>96</h>
     </coordinates>
     <panel_attributes>AktivKonto
 --
@@ -197,10 +197,10 @@ Konto
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>792</x>
-      <y>144</y>
-      <w>132</w>
-      <h>108</h>
+      <x>760</x>
+      <y>192</y>
+      <w>88</w>
+      <h>72</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;70.0;70.0;70.0;70.0;10.0;90.0;10.0</additional_attributes>
@@ -208,10 +208,10 @@ Konto
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>792</x>
-      <y>216</y>
-      <w>132</w>
-      <h>120</h>
+      <x>760</x>
+      <y>240</y>
+      <w>88</w>
+      <h>80</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;70.0;10.0;70.0;80.0;90.0;80.0</additional_attributes>
@@ -219,10 +219,10 @@ Konto
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>984</x>
-      <y>384</y>
-      <w>276</w>
-      <h>120</h>
+      <x>888</x>
+      <y>352</y>
+      <w>184</w>
+      <h>80</h>
     </coordinates>
     <panel_attributes>DbConnection
 --
@@ -236,10 +236,10 @@ _+ GetInstance(): DbConnection_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>792</x>
-      <y>264</y>
-      <w>216</w>
-      <h>168</h>
+      <x>760</x>
+      <y>272</y>
+      <w>144</w>
+      <h>112</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;&gt;&gt;
 m1=0..*
@@ -249,10 +249,10 @@ m2=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>312</x>
-      <y>72</y>
-      <w>156</w>
-      <h>84</h>
+      <x>440</x>
+      <y>144</y>
+      <w>104</w>
+      <h>56</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
 m1=0..*
@@ -262,10 +262,10 @@ m2=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>480</x>
-      <y>300</y>
-      <w>84</w>
-      <h>156</h>
+      <x>552</x>
+      <y>296</y>
+      <w>56</w>
+      <h>104</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;&gt;&gt;
 m1=1
@@ -276,10 +276,10 @@ m2=2
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1248</x>
-      <y>132</y>
-      <w>180</w>
-      <h>300</h>
+      <x>1064</x>
+      <y>184</y>
+      <w>120</w>
+      <h>200</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;-
 m1=1
@@ -289,10 +289,10 @@ m2=1</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>432</x>
-      <y>792</y>
-      <w>204</w>
-      <h>120</h>
+      <x>520</x>
+      <y>624</y>
+      <w>136</w>
+      <h>80</h>
     </coordinates>
     <panel_attributes>BilanzPrinter
 --
