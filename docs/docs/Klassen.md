@@ -101,6 +101,58 @@ Dise Klasse erstellt ein Singleton-Objekt. Somit kann immer und überall auf die
 
 *keine*
 
+### Konto
+
+#### Zusammenfassung
+
+Die Klasse Konto ist eine abstrakte Superklasse für Passiv- und Aktivkonto. Diese Unterscheidung der Konten ist essentiell in der Buchhalten, sie haben aber trotzdessen viele Gemeinsamkeiten. Diese werden in dieser abstrakten Klasse vorgegeben.
+
+#### Superklasse
+
+*keine*
+
+#### Interfaces
+
+*keine*
+
+#### Felder
+
+- **private int _kontoId**
+  - Beinhaltet die Kontonummber aus dem KMU-Kontenrahmen.
+- **private string _kontoName**
+  - Beinhaltet den Kontonamen aus dem KMU-Kontenrahmen.
+- **private DbConnection _db**
+  - Zeigt auf das Singleton-Objekt [DbConnection](#dbconnection).
+
+#### Eigenschaften
+
+- **public int KontoId { get; }**
+  - Gibt die Kontennummer zurück.
+  - Wert kann mehr nicht gesetzt werden.
+- **public string Kontoname { get; }**
+  - Gibt den Kontonamen zurück.
+  - Wert kann mehr nicht gesetzt werden.
+
+#### Methoden
+
+- **public Konto(int kontoId, string kontoName)**
+  - Ist der Konstruktor der Klasse.
+  - Nimmt die Felder als Parameter an.
+  - Setzt die Singleton-Instanz des [DbConnection-Objekts](#dbconnection) als Feld.
+- **public abstract void TaetigeSollBuchung(decimal betrag)**
+  - Ist abstrakt, wird erst in einer Subklasse implementiert.
+- **public abstract void TaetigeHabenBuchung(decimal betrag)**
+  - Ist abstrakt, wird erst in einer Subklasse implementiert.
+- **public abstract decimal BerechneSaldo()**
+  - Führt eine Abfrage der Datenbank über die Buchungssätze aus.
+  - Verrechnet die jeweiligen Soll- und Haben-Buchungen.
+  - Gibt den aktuellen Saldo des Kontos aus.
+
+#### Subklassen
+
+- [AktivKonto]
+- [PassivKonto]
+
 ## View Namespace
 
 ## Controller Namespace
