@@ -62,6 +62,7 @@ Hier sind alle Quellen aufgelistet, welche während dem Aublauf des Projekts als
 - [Design Patterns](https://refactoring.guru/design-patterns)
 - [SQLite offizielle Doku](https://sqlite.org/docs.html)
 - [Anwendung von SQLite in einer C# App](https://www.codeguru.com/dotnet/using-sqlite-in-a-c-application/)
+- [Ausführen von Scripts mit SQLite in C#](https://stackoverflow.com/questions/650098/how-to-execute-an-sql-script-file-using-c-sharp)
 
 ## Planen
 
