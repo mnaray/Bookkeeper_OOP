@@ -1,18 +1,67 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="14.3.0">
   <help_text/>
-  <zoom_level>10</zoom_level>
+  <zoom_level>8</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>440</x>
-      <y>220</y>
-      <w>250</w>
-      <h>70</h>
+      <x>336</x>
+      <y>1056</y>
+      <w>200</w>
+      <h>56</h>
     </coordinates>
     <panel_attributes>Entrypoint
 --
-_Main(args: string[]): void_</panel_attributes>
+_Main(args: string[]): void_
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>744</x>
+      <y>440</y>
+      <w>552</w>
+      <h>432</h>
+    </coordinates>
+    <panel_attributes>Controller
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLActor</id>
+    <coordinates>
+      <x>680</x>
+      <y>984</y>
+      <w>80</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>Nutzer
+(Buchhalter)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>168</x>
+      <y>440</y>
+      <w>552</w>
+      <h>432</h>
+    </coordinates>
+    <panel_attributes>View
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>448</x>
+      <y>0</y>
+      <w>552</w>
+      <h>432</h>
+    </coordinates>
+    <panel_attributes>Model
+--</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>
