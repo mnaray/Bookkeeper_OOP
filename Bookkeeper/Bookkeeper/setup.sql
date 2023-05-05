@@ -1,31 +1,31 @@
-﻿CREATE TABLE balance_account_types (
-    type_id INTEGER NOT NULL PRIMARY KEY,
-    type_name VARCHAR(50)
+﻿CREATE TABLE bilanz_konto_typen (
+    typ_id INTEGER NOT NULL PRIMARY KEY,
+    typ_name VARCHAR(50)
 );
 
--- might put account balance in this table
-CREATE TABLE balance_accounts (
-    account_id INTEGER NOT NULL PRIMARY KEY,
-    account_name VARCHAR(255) NOT NULL,
-    account_type INTEGER NOT NULL,
-    FOREIGN KEY (account_type) REFERENCES balance_account_types(type_id)
+-- ggf. kontenbetrag noch in diese tabelle
+CREATE TABLE bilanz_konten (
+    konto_id INTEGER NOT NULL PRIMARY KEY,
+    konto_name VARCHAR(255) NOT NULL,
+    konto_typ INTEGER NOT NULL,
+    FOREIGN KEY (konto_typ) REFERENCES bilanz_konto_typen(typ_id)
 );
 
-CREATE TABLE booking_records (
-    record_id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
-    reason VARCHAR(500),
-    booking_date INTEGER, -- UNIX Timestamp
-    debit_account_id INTEGER NOT NULL,
-    credit_account_id INTEGER NOT NULL,
-    amount MONEY NOT NULL,
-    FOREIGN KEY (debit_account_id) REFERENCES balance_accounts(account_id),
-    FOREIGN KEY (credit_account_id) REFERENCES balance_accounts(account_id)
+CREATE TABLE buchungssaetze (
+    buchungssatz_id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    buchungstext VARCHAR(500),
+    buchungsdatum INTEGER, -- UNIX Timestamp
+    soll_konto_id INTEGER NOT NULL,
+    haben_konto_id INTEGER NOT NULL,
+    betrag MONEY NOT NULL,
+    FOREIGN KEY (soll_konto_id) REFERENCES bilanz_konten(konto_id),
+    FOREIGN KEY (haben_konto_id) REFERENCES bilanz_konten(konto_id)
 );
 
-INSERT INTO balance_account_types (type_id, type_name)
+INSERT INTO bilanz_konto_typen (typ_id, typ_name)
 VALUES (1, 'active'), (2, 'passive');
 
-INSERT INTO balance_accounts (account_id, account_name, account_type)
+INSERT INTO bilanz_konten (konto_id, konto_name, konto_typ)
 VALUES
     (100, 'Flüssige Mittel', 1),
     (1000, 'Kasse', 1),
