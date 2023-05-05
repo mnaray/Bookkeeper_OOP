@@ -45,7 +45,7 @@ In der folgenden Tabelle sind die Anforderungen für das Projekt vorzufinden.
 | 12  | M               | funk.                   | Es braucht einen Befehl, um die Erfolgsrechnung auszugeben.                                         |
 | 13  | M               | rand                    | Es muss ein Klassendiagramm in UML vorhanden sein.                                                  |
 | 14  | M               | rand                    | Die Software soll nach dem MVC-Konzept aufgebaut sein.                                              |
-| 15  | M               | rand                    | Diese erste Version soll vollständig auf Englisch sein.                                            |
+| 15  | M               | rand                    | Diese erste Version soll vollständig auf Deutsch sein.                                             |
 
 ### Technologien
 
