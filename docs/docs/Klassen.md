@@ -118,7 +118,7 @@ Die Klasse Konto ist eine abstrakte Superklasse für Passiv- und Aktivkonto. Die
 #### Felder
 
 - **private int _kontoId**
-  - Beinhaltet die Kontonummber aus dem KMU-Kontenrahmen.
+  - Beinhaltet die Kontonummer aus dem KMU-Kontenrahmen.
 - **private string _kontoName**
   - Beinhaltet den Kontonamen aus dem KMU-Kontenrahmen.
 - **private DbConnection _db**
