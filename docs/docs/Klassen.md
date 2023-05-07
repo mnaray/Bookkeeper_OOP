@@ -150,8 +150,60 @@ Die Klasse Konto ist eine abstrakte Superklasse für Passiv- und Aktivkonto. Die
 
 #### Subklassen
 
-- [AktivKonto]
+- [AktivKonto](#aktivkonto)
 - [PassivKonto]
+
+### AktivKonto
+
+#### Zusammenfassung
+
+Diese Klasse stammt von [Konto](#konto) ab. Sie implementiert die Funktionen eines Aktivkontos in der Buchhaltung.
+
+#### Superklasse
+
+- [Konto](#konto)
+
+#### Interfaces
+
+*keine*
+
+#### Felder
+
+- **private int _kontoId**
+  - Beinhaltet die Kontonummer aus dem KMU-Kontenrahmen.
+- **private string _kontoName**
+  - Beinhaltet den Kontonamen aus dem KMU-Kontenrahmen.
+- **private DbConnection _db**
+  - Zeigt auf das Singleton-Objekt [DbConnection](#dbconnection).
+
+#### Eigenschaften
+
+- **public int KontoId { get; }**
+  - Gibt die Kontennummer zurück.
+  - Wert kann mehr nicht gesetzt werden.
+- **public string Kontoname { get; }**
+  - Gibt den Kontonamen zurück.
+  - Wert kann mehr nicht gesetzt werden.
+
+#### Methoden
+
+- **public AktivKonto(int kontoId, string kontoName)**
+  - Ist der Konstruktor der Klasse.
+  - Gibt die Parameter an den Base-Konstruktor (von [Konto](#konto)) weiter.
+- **public void TaetigeSollBuchung(decimal betrag)**
+  - Erhöht den Saldo des Kontos.
+  - (Erst zu implementieren, wenn Saldo in der DB gespeichert wird.)
+- **public void TaetigeHabenBuchung(decimal betrag)**
+  - Verringert den Saldo des Kontos.
+  - (Erst zu implementieren, wenn Saldo in der DB gespeichert wird.)
+- **public decimal BerechneSaldo()**
+  - Führt eine Abfrage der Datenbank über die Buchungssätze aus.
+  - Verrechnet die jeweiligen Soll- und Haben-Buchungen.
+  - Gibt den aktuellen Saldo des Kontos aus.
+
+#### Subklassen
+
+*keine*
 
 ## View Namespace
 
