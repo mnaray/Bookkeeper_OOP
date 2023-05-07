@@ -107,7 +107,7 @@ intputs</panel_attributes>
 - _sollKonto: Konto
 - _habenKonto: Konto
 - _betrag: decimal
-+ Id: int
++ Id?: int
 + Buchungstext: string
 + SollKonto: Konto
 + HabenKonto: Konto
