@@ -257,6 +257,61 @@ Diese Klasse stammt von [Konto](#konto) ab. Sie implementiert die Funktionen ein
 
 *keine*
 
+### Buchungssatz
+
+#### Zusammenfassung
+
+Diese Klasse beinhaltet beschreibt, wie ein Buchungssatz beinhaltet (siehe UML für mehr Details). Er kann auch ausgeführt werden, damit ein neuer Eintrag in der Datenbank entsteht. Wenn nötig, können die Daten aus der entsprechenden Tabelle in dieses Objekt eingefügt werden.
+
+#### Superklasse
+
+*keine*
+
+#### Interfaces
+
+*keine*
+
+#### Felder
+
+- **private int? _id**
+  - Beinhaltet die ID in der Datenbank, falls diese schon vorhanden ist.
+  - Wenn neuer Buchungssatz, dann null. Datenbank vergibt automatisch eine ID.
+- **private string _buchungstext**
+  - Ein kleiner Buchungstext, der Informationen zur dazugehörigen Buchung beinhaltet.
+- **private int _buchungsdatum**
+  - Datum der Buchung.
+  - Wird im Unix-Timestamp Format in der DB gespeichert.
+- **private Konto _sollKonto**
+  - Ein [Konto-Objekt](#konto) im Soll der Buchung
+- **private Konto _habenKonto**
+  - Ein [Konto-Objekt](#konto) im Haben der Buchung
+- **private decimal _betrag**
+
+#### Eigenschaften
+
+- **public int? Id**
+  - Gibt die ID in *_id* zurück, falls diese nicht null ist.
+- **public string Buchungstext**
+  - Gibt den Buchungstext zurück.
+- **public Konto SollKonto**
+  - Gibt das Soll-Konto der Buchung zurück.
+- **public Konto HabenKonto**
+  - Gibt das Haben-Konto der Buchung zurück.
+- **public decimal Betrag**
+  - Gibt den Betrag der Buchung zurück.
+
+#### Methoden
+
+- **public Buchungssatz()**
+  - Ist der Konstruktor der Klasse.
+- **public void Ausführen**
+  - Führt die Buchung aus.
+  - Erstellt einen Eintrag in der Datenbank.
+
+#### Subklassen
+
+*keine*
+
 ## View Namespace
 
 ## Controller Namespace
