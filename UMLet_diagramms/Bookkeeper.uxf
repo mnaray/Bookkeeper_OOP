@@ -1,18 +1,623 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="14.3.0">
   <help_text/>
-  <zoom_level>10</zoom_level>
+  <zoom_level>6</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>440</x>
-      <y>220</y>
-      <w>250</w>
-      <h>70</h>
+      <x>972</x>
+      <y>222</y>
+      <w>204</w>
+      <h>48</h>
     </coordinates>
     <panel_attributes>Entrypoint
 --
-_Main(args: string[]): void_</panel_attributes>
+_- Main(args: string[]): void_
+_- SetUpDB(): void_
+_- ExecuteScript(SQLiteConnection connection): void_
+
+</panel_attributes>
     <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>744</x>
+      <y>552</y>
+      <w>492</w>
+      <h>324</h>
+    </coordinates>
+    <panel_attributes>Controller
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLActor</id>
+    <coordinates>
+      <x>708</x>
+      <y>930</y>
+      <w>60</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>Nutzer
+(Buchhalter)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>324</x>
+      <y>222</y>
+      <w>642</w>
+      <h>324</h>
+    </coordinates>
+    <panel_attributes>Model
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>324</x>
+      <y>552</y>
+      <w>414</w>
+      <h>324</h>
+    </coordinates>
+    <panel_attributes>View
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>702</x>
+      <y>870</y>
+      <w>54</w>
+      <h>78</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+outputs</panel_attributes>
+    <additional_attributes>40.0;110.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>744</x>
+      <y>870</y>
+      <w>54</w>
+      <h>78</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+intputs</panel_attributes>
+    <additional_attributes>50.0;10.0;10.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>594</x>
+      <y>360</y>
+      <w>132</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>Buchungssatz
+--
+- _id?: int
+- _buchungstext: string
+- _buchungsdatum: int
+- _sollKonto: Konto
+- _habenKonto: Konto
+- _betrag: decimal
++ Id?: int
++ Buchungstext: string
++ SollKonto: Konto
++ HabenKonto: Konto
++ Betrag: decimal
+--
++ Buchungssatz(): Buchungssatz
++ Ausfuehren(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>546</x>
+      <y>234</y>
+      <w>180</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;abstract&gt;&gt;
+Konto
+--
+- _kontoId: int
+- _kontoName: string
+- _db: DbConnection
++ KontoId: int
++ KontoName: string
+--
++ Konto(kontoId: int, kontoName: string): Konto
+/+ TaetigeSollBuchung(betrag: decimal): void/
+/+ TaetigeHabenBuchung(betrag: decimal): void/
+/+ BerechneSaldo(): decimal/</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>774</x>
+      <y>312</y>
+      <w>180</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>PassivKonto
+--
+
+--
++ PassivKonto(): PassivKonto
++ TaetigeSollBuchung(betrag: decimal): void
++ TaetigeHabenBuchung(betrag: decimal): void
++ BerechneSaldo(): decimal</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>336</x>
+      <y>264</y>
+      <w>204</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>Bilanz
+--
++ Total: decimal
+--
++ Bilanz(): Bilanz
++ StecheBilanz(): Dictionary&lt;Konto, decimal&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>774</x>
+      <y>234</y>
+      <w>180</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>AktivKonto
+--
+
+--
++ AktivKonto(): AktivKonto
++ TaetigeSollBuchung(betrag: decimal): void
++ TaetigeHabenBuchung(betrag: decimal): void
++ BerechneSaldo(): decimal</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>720</x>
+      <y>270</y>
+      <w>66</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;70.0;70.0;70.0;70.0;10.0;90.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>720</x>
+      <y>306</y>
+      <w>66</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;70.0;10.0;70.0;80.0;90.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>816</x>
+      <y>390</y>
+      <w>138</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;singleton&gt;&gt;
+DbConnection
+--
+_- instance: DbConnection_
+--
+- DbConnection(): DbConnection
+_+ GetInstance(): DbConnection_
++ ExecuteQuery(query: string): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>438</x>
+      <y>228</y>
+      <w>120</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;&gt;&gt;
+m1=0..*
+m2=1
+_konten: List&lt;Konto&gt;</panel_attributes>
+    <additional_attributes>180.0;20.0;10.0;20.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>564</x>
+      <y>348</y>
+      <w>42</w>
+      <h>78</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=1
+m2=2
+</panel_attributes>
+    <additional_attributes>50.0;100.0;10.0;100.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>336</x>
+      <y>570</y>
+      <w>144</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>BilanzView
+--
+- _bilanz: Bilanz
+--
++ BilanzView(): BilanzView
++ GibAnsichtAus(): void
++ ErstelleAnsicht(): string</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>354</x>
+      <y>312</y>
+      <w>30</w>
+      <h>270</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;&gt;
+m1=1
+m2=0..1</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;430.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>486</x>
+      <y>570</y>
+      <w>174</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>BefehlHilfeView
+--
+- _commands: Dictionary&lt;string, Command&gt;
+--
++ BefehlHilfeView(): BefehlHilfeView
++ GibAnsichtAus(): void
++ ErstelleAnsicht(): string
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>336</x>
+      <y>666</y>
+      <w>102</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+View
+--
++ GibAnsichtAus(): void
++ ErstelleAnsicht(): string</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>348</x>
+      <y>624</y>
+      <w>42</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;30.0;50.0;30.0;50.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>372</x>
+      <y>624</y>
+      <w>144</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;&gt;</panel_attributes>
+    <additional_attributes>220.0;10.0;220.0;30.0;10.0;30.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>756</x>
+      <y>570</y>
+      <w>168</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>InputManager
+--
+- _currentCommand: string
+- _commandManager: CommandManager
+--
++ InputManager(): InputManager
++ VersucheAuszuführen(): void
+- ValidiereInput(): bool</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>936</x>
+      <y>564</y>
+      <w>102</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;abstract&gt;&gt;
+/Command/
+--
+# _name: string
+# _beschreibung: string
++ Name: string
++ Beschreibung: string
+--
++ Command(): Command
+/+ Ausfuehren(): void/</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>756</x>
+      <y>678</y>
+      <w>180</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>CommandManager
+--
+- _commands: Dictionary&lt;string, Command&gt;
++ Commands(): Dictionary&lt;string, Command&gt;
+--
++ CommandManager(): CommandManager
++ FuehreCommandAus(command: string): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>846</x>
+      <y>636</y>
+      <w>24</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1=1
+m2=1</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>888</x>
+      <y>642</y>
+      <w>60</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1=1
+m2=0..*</panel_attributes>
+    <additional_attributes>10.0;60.0;10.0;10.0;80.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1062</x>
+      <y>564</y>
+      <w>162</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>BuchenCommand
+--
+
+--
++ BuchenCommand(): BuchenCommand
++ Ausfuehren(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1008</x>
+      <y>684</y>
+      <w>216</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>BilanzAusgabeCommand
+--
+
+--
++ BilanzAusgabeCommand(): BilanzAusgabeCommand
++ Ausfuehren(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1086</x>
+      <y>624</y>
+      <w>138</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>HilfeCommand
+--
+
+--
++ HilfeCommand(): HilfeCommand
++ Ausfuehren(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1020</x>
+      <y>648</y>
+      <w>18</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1032</x>
+      <y>624</y>
+      <w>66</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;90.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1032</x>
+      <y>594</y>
+      <w>42</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;50.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>486</x>
+      <y>660</y>
+      <w>210</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>EingabeVerlanger
+--
+
+--
++ EingabeVerlanger(): EingabeVerlanger
++ GibAnsichtAus(): void
++ ErstelleAnsicht(): string</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>432</x>
+      <y>684</y>
+      <w>66</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;90.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>720</x>
+      <y>330</y>
+      <w>108</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+&lt;&lt;uses&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;40.0;10.0;40.0;120.0;160.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>492</x>
+      <y>312</y>
+      <w>336</w>
+      <h>228</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+&lt;&lt;uses&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;360.0;430.0;360.0;430.0;210.0;540.0;210.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>948</x>
+      <y>264</y>
+      <w>78</w>
+      <h>174</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+&lt;&lt;uses&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;270.0;110.0;270.0;110.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>654</x>
+      <y>606</y>
+      <w>138</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+&lt;&lt;uses&gt;&gt;</panel_attributes>
+    <additional_attributes>210.0;120.0;210.0;80.0;90.0;80.0;90.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>390</x>
+      <y>648</y>
+      <w>600</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+&lt;&lt;uses&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;110.0;10.0;190.0;980.0;190.0;980.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>720</x>
+      <y>468</y>
+      <w>432</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+&lt;&lt;uses&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;20.0;700.0;20.0;700.0;160.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>852</x>
+      <y>264</y>
+      <w>222</w>
+      <h>318</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1=1
+m2=1</panel_attributes>
+    <additional_attributes>340.0;10.0;340.0;440.0;10.0;440.0;10.0;510.0</additional_attributes>
   </element>
 </diagram>
