@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="14.3.0">
   <help_text/>
-  <zoom_level>19</zoom_level>
+  <zoom_level>8</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>2052</x>
+      <x>1000</x>
       <y>0</y>
-      <w>665</w>
-      <h>152</h>
+      <w>272</w>
+      <h>64</h>
     </coordinates>
     <panel_attributes>Entrypoint
 --
@@ -22,10 +22,10 @@ _- ExecuteScript(SQLiteConnection connection): void_
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>1330</x>
-      <y>1045</y>
-      <w>1311</w>
-      <h>1026</h>
+      <x>696</x>
+      <y>440</y>
+      <w>656</w>
+      <h>432</h>
     </coordinates>
     <panel_attributes>Controller
 --</panel_attributes>
@@ -34,10 +34,10 @@ _- ExecuteScript(SQLiteConnection connection): void_
   <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>1216</x>
-      <y>2242</y>
-      <w>190</w>
-      <h>228</h>
+      <x>648</x>
+      <y>944</y>
+      <w>80</w>
+      <h>96</h>
     </coordinates>
     <panel_attributes>Nutzer
 (Buchhalter)</panel_attributes>
@@ -46,10 +46,10 @@ _- ExecuteScript(SQLiteConnection connection): void_
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>0</x>
+      <x>136</x>
       <y>0</y>
-      <w>2033</w>
-      <h>1026</h>
+      <w>856</w>
+      <h>432</h>
     </coordinates>
     <panel_attributes>Model
 --</panel_attributes>
@@ -58,10 +58,10 @@ _- ExecuteScript(SQLiteConnection connection): void_
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>0</x>
-      <y>1045</y>
-      <w>1311</w>
-      <h>1026</h>
+      <x>136</x>
+      <y>440</y>
+      <w>552</w>
+      <h>432</h>
     </coordinates>
     <panel_attributes>View
 --</panel_attributes>
@@ -70,10 +70,10 @@ _- ExecuteScript(SQLiteConnection connection): void_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1197</x>
-      <y>2052</y>
-      <w>171</w>
-      <h>247</h>
+      <x>640</x>
+      <y>864</y>
+      <w>72</w>
+      <h>104</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 outputs</panel_attributes>
@@ -82,10 +82,10 @@ outputs</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1330</x>
-      <y>2052</y>
-      <w>171</w>
-      <h>247</h>
+      <x>696</x>
+      <y>864</y>
+      <w>72</w>
+      <h>104</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 intputs</panel_attributes>
@@ -94,10 +94,10 @@ intputs</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>855</x>
-      <y>437</y>
-      <w>418</w>
-      <h>475</h>
+      <x>496</x>
+      <y>184</y>
+      <w>176</w>
+      <h>200</h>
     </coordinates>
     <panel_attributes>Buchungssatz
 --
@@ -114,16 +114,16 @@ intputs</panel_attributes>
 + Betrag: decimal
 --
 + Buchungssatz(): Buchungssatz
-+ Ausführen(): void</panel_attributes>
++ Ausfuehren(): void</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>703</x>
-      <y>38</y>
-      <w>570</w>
-      <h>380</h>
+      <x>432</x>
+      <y>16</y>
+      <w>240</w>
+      <h>160</h>
     </coordinates>
     <panel_attributes>&lt;&lt;abstract&gt;&gt;
 Konto
@@ -143,10 +143,10 @@ Konto
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1425</x>
-      <y>285</y>
-      <w>570</w>
-      <h>228</h>
+      <x>736</x>
+      <y>120</y>
+      <w>240</w>
+      <h>96</h>
     </coordinates>
     <panel_attributes>PassivKonto
 --
@@ -161,10 +161,10 @@ Konto
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>38</x>
-      <y>133</y>
-      <w>646</w>
-      <h>190</h>
+      <x>152</x>
+      <y>56</y>
+      <w>272</w>
+      <h>80</h>
     </coordinates>
     <panel_attributes>Bilanz
 --
@@ -178,10 +178,10 @@ Konto
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1425</x>
-      <y>38</y>
-      <w>570</w>
-      <h>228</h>
+      <x>736</x>
+      <y>16</y>
+      <w>240</w>
+      <h>96</h>
     </coordinates>
     <panel_attributes>AktivKonto
 --
@@ -196,10 +196,10 @@ Konto
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1254</x>
-      <y>152</y>
-      <w>209</w>
-      <h>171</h>
+      <x>664</x>
+      <y>64</y>
+      <w>88</w>
+      <h>72</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;70.0;70.0;70.0;70.0;10.0;90.0;10.0</additional_attributes>
@@ -207,10 +207,10 @@ Konto
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1254</x>
-      <y>266</y>
-      <w>209</w>
-      <h>190</h>
+      <x>664</x>
+      <y>112</y>
+      <w>88</w>
+      <h>80</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;70.0;10.0;70.0;80.0;90.0;80.0</additional_attributes>
@@ -218,10 +218,10 @@ Konto
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1558</x>
-      <y>532</y>
-      <w>437</w>
-      <h>190</h>
+      <x>792</x>
+      <y>224</y>
+      <w>184</w>
+      <h>80</h>
     </coordinates>
     <panel_attributes>DbConnection
 --
@@ -235,10 +235,10 @@ _+ GetInstance(): DbConnection_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1254</x>
-      <y>342</y>
-      <w>342</w>
-      <h>266</h>
+      <x>664</x>
+      <y>144</y>
+      <w>144</w>
+      <h>112</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;&gt;&gt;
 m1=0..*
@@ -248,10 +248,10 @@ m2=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>494</x>
-      <y>38</y>
-      <w>247</w>
-      <h>133</h>
+      <x>344</x>
+      <y>16</y>
+      <w>104</w>
+      <h>56</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
 m1=0..*
@@ -261,10 +261,10 @@ m2=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>760</x>
-      <y>399</y>
-      <w>133</w>
-      <h>247</h>
+      <x>456</x>
+      <y>168</y>
+      <w>56</w>
+      <h>104</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;&gt;&gt;
 m1=1
@@ -275,10 +275,10 @@ m2=2
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1976</x>
-      <y>133</y>
-      <w>285</w>
-      <h>475</h>
+      <x>968</x>
+      <y>56</y>
+      <w>120</w>
+      <h>200</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;-
 m1=1
@@ -288,27 +288,27 @@ m2=1</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>38</x>
-      <y>1102</y>
-      <w>456</w>
-      <h>190</h>
+      <x>152</x>
+      <y>464</y>
+      <w>192</w>
+      <h>80</h>
     </coordinates>
     <panel_attributes>BilanzView
 --
 - _bilanz: Bilanz
 --
 + BilanzView(): BilanzView
-+ GibAnsichtAus(ansicht: string): void
++ GibAnsichtAus(): void
 + ErstelleAnsicht(): string</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>95</x>
-      <y>304</y>
-      <w>95</w>
-      <h>836</h>
+      <x>176</x>
+      <y>128</y>
+      <w>40</w>
+      <h>352</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
 m1=1
@@ -318,56 +318,272 @@ m2=0..1</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>513</x>
-      <y>1102</y>
-      <w>456</w>
-      <h>190</h>
+      <x>352</x>
+      <y>464</y>
+      <w>200</w>
+      <h>80</h>
     </coordinates>
     <panel_attributes>BefehlHilfeView
 --
-- _befehle: List&lt;Befehl&gt;
+- _
 --
 + BefehlHilfeView(): BefehlHilfeView
-+ GibAnsichtAus(ansicht: string): void
-+ ErstelleAnsicht(): void
++ GibAnsichtAus(): void
++ ErstelleAnsicht(): string
 </panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>38</x>
-      <y>1368</y>
-      <w>456</w>
-      <h>152</h>
+      <x>152</x>
+      <y>592</y>
+      <w>136</w>
+      <h>64</h>
     </coordinates>
     <panel_attributes>&lt;&lt;interface&gt;&gt;
 View
 --
-+ GibAnsichtAus(ansicht: string): void
-+ ErstelleAnsicht(): void</panel_attributes>
++ GibAnsichtAus(): void
++ ErstelleAnsicht(): string</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>76</x>
-      <y>1273</y>
-      <w>133</w>
-      <h>133</h>
+      <x>168</x>
+      <y>536</y>
+      <w>56</w>
+      <h>72</h>
     </coordinates>
-    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;30.0;50.0;30.0;50.0;50.0</additional_attributes>
+    <panel_attributes>lt=.&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;30.0;50.0;30.0;50.0;70.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>152</x>
-      <y>1273</y>
-      <w>456</w>
-      <h>133</h>
+      <x>200</x>
+      <y>536</y>
+      <w>192</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;&gt;</panel_attributes>
+    <additional_attributes>220.0;10.0;220.0;30.0;10.0;30.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>392</x>
+      <y>128</y>
+      <w>416</w>
+      <h>288</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1=1
+m2=1</panel_attributes>
+    <additional_attributes>500.0;190.0;390.0;190.0;390.0;340.0;10.0;340.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>712</x>
+      <y>464</y>
+      <w>224</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>InputManager
+--
+- _currentCommand: string
+- _commandManager: CommandManager
+--
++ InputManager(): InputManager
++ VersucheAuszuführen(): void
+- ValidiereInput(): bool</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>952</x>
+      <y>456</y>
+      <w>136</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;abstract&gt;&gt;
+/Command/
+--
+# _name: string
+# _beschreibung: string
++ Name: string
++ Beschreibung: string
+--
++ Command(): Command
+/+ Ausfuehren(): void/</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>712</x>
+      <y>608</y>
+      <w>240</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>CommandManager
+--
+- _commands: Dictionary&lt;string, Command&gt;
++ Commands(): Dictionary&lt;string, Command&gt;
+--
++ CommandManager(): CommandManager
++ FuehreCommandAus(command: string): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>832</x>
+      <y>552</y>
+      <w>32</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1=1
+m2=1</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>888</x>
+      <y>560</y>
+      <w>80</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1=1
+m2=0..*</panel_attributes>
+    <additional_attributes>10.0;60.0;10.0;10.0;80.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1120</x>
+      <y>456</y>
+      <w>216</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>BuchenCommand
+--
+
+--
++ BuchenCommand(): BuchenCommand
++ Ausfuehren(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1048</x>
+      <y>616</y>
+      <w>288</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>BilanzAusgabeCommand
+--
+
+--
++ BilanzAusgabeCommand(): BilanzAusgabeCommand
++ Ausfuehren(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1152</x>
+      <y>536</y>
+      <w>184</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>HilfeCommand
+--
+
+--
++ HilfeCommand(): HilfeCommand
++ Ausfuehren(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1064</x>
+      <y>568</y>
+      <w>24</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1080</x>
+      <y>536</y>
+      <w>88</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;90.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1080</x>
+      <y>496</y>
+      <w>56</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;50.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>352</x>
+      <y>584</y>
+      <w>200</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>EingabeVerlanger
+--
+
+--
++ EingabeVerlanger: EingabeVerlanger
++ GibAnsichtAus(): void
++ ErstelleAnsicht(): string</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>616</y>
+      <w>88</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.</panel_attributes>
-    <additional_attributes>220.0;10.0;220.0;30.0;10.0;30.0;10.0;50.0</additional_attributes>
+    <additional_attributes>10.0;10.0;90.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>544</x>
+      <y>496</y>
+      <w>224</w>
+      <h>128</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1=1
+m2=1</panel_attributes>
+    <additional_attributes>10.0;10.0;130.0;10.0;130.0;110.0;250.0;110.0;250.0;140.0</additional_attributes>
   </element>
 </diagram>
