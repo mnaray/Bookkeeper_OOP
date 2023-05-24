@@ -46,5 +46,10 @@ namespace Bookkeeper.Model
                 }
             }
         }
+
+        public Dictionary<Konto, decimal> StecheBilanz()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
