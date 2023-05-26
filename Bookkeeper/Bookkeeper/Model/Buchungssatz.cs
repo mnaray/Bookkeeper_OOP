@@ -14,11 +14,42 @@
         public Konto HabenKonto { get { return _habenKonto; } }
         public decimal Betrag { get { return _betrag; } }
 
-        public Buchungssatz(int? id, string buchungstext, Konto sollKonto,
+        public Buchungssatz(int id, string buchungstext, Konto sollKonto,
             Konto habenKonto, decimal betrag)
         {
             _id = id;
             _buchungstetxt = buchungstext;
+            _buchungsdatum = (int)DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1)).TotalSeconds;
+            _sollKonto = sollKonto;
+            _habenKonto = habenKonto;
+            _betrag = betrag;
+        }
+        
+        public Buchungssatz(string buchungstext, Konto sollKonto,
+            Konto habenKonto, decimal betrag)
+        {
+            _id = null;
+            _buchungstetxt = buchungstext;
+            _buchungsdatum = (int)DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1)).TotalSeconds;
+            _sollKonto = sollKonto;
+            _habenKonto = habenKonto;
+            _betrag = betrag;
+        }
+        
+        public Buchungssatz(int id, Konto sollKonto, Konto habenKonto, decimal betrag)
+        {
+            _id = id;
+            _buchungstetxt = "Kein Buchungstext wurde angegeben.";
+            _buchungsdatum = (int)DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1)).TotalSeconds;
+            _sollKonto = sollKonto;
+            _habenKonto = habenKonto;
+            _betrag = betrag;
+        }
+
+        public Buchungssatz(Konto sollKonto, Konto habenKonto, decimal betrag)
+        {
+            _id = null;
+            _buchungstetxt = "Kein Buchungstext wurde angegeben.";
             _buchungsdatum = (int)DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1)).TotalSeconds;
             _sollKonto = sollKonto;
             _habenKonto = habenKonto;
