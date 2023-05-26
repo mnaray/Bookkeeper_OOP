@@ -1,4 +1,5 @@
 ﻿using Bookkeeper.Controller.Commands;
+using Bookkeeper.View;
 
 namespace Bookkeeper.Controller
 {
@@ -9,6 +10,8 @@ namespace Bookkeeper.Controller
 
         public InputManager(string input)
         {
+            _currentCommand = Array.Empty<string>();
+
             _commandManager = new CommandManager();
             _commandManager.FuegeCommandHinzu(new HilfeCommand());
             _commandManager.FuegeCommandHinzu(new BuchenCommand());
@@ -24,7 +27,7 @@ namespace Bookkeeper.Controller
             }
             catch (Exception e)
             {
-                Console.Error.WriteLine(e.Message);
+                new ErrorView(e).ErstelleAnsicht();
             }
         }
 
