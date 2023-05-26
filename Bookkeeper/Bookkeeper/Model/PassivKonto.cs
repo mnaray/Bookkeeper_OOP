@@ -2,8 +2,9 @@
 {
     public class PassivKonto : Konto
     {
-        public PassivKonto(int konotId, string kontoName) : 
-            base(konotId, kontoName) { }
+        public PassivKonto(int konotId, string kontoName) :
+            base(konotId, kontoName)
+        { }
 
         public override void TaetigeSollBuchung(decimal betrag)
         {
