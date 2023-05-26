@@ -34,7 +34,8 @@ namespace Bookkeeper.Controller
             }
             catch (Exception e)
             {
-                string nachricht = "Es ist ein Fehler bei der Bearbeitung des Befehls aufgetreten.";
+                string nachricht = "Es ist ein Fehler bei der Bearbeitung des Befehls aufgetreten.\n" +
+                    "Gib <hilfe> ein, um mehr Infomationen über den Befehl zu erhalten.";
                 new ErrorView(e, nachricht).GibAnsichtAus();
             }
         }
