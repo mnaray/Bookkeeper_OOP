@@ -10,6 +10,10 @@ namespace Bookkeeper.Controller
         public CommandManager()
         {
             _commands = new Dictionary<string, Command>();
+
+            FuegeCommandHinzu(new HilfeCommand());
+            FuegeCommandHinzu(new BuchenCommand());
+            FuegeCommandHinzu(new BilanzausgabeCommand());
         }
 
         public void FuegeCommandHinzu(Command command)

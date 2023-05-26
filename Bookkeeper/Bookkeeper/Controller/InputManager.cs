@@ -10,13 +10,8 @@ namespace Bookkeeper.Controller
 
         public InputManager(string input)
         {
-            _currentCommand = Array.Empty<string>();
-
             _commandManager = new CommandManager();
-            _commandManager.FuegeCommandHinzu(new HilfeCommand());
-            _commandManager.FuegeCommandHinzu(new BuchenCommand());
-            _commandManager.FuegeCommandHinzu(new BilanzausgabeCommand());
-
+            _currentCommand = Array.Empty<string>();
             try
             {
                 _currentCommand = input.Trim().Split(' ')!;
