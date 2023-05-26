@@ -12,7 +12,7 @@ namespace Bookkeeper.Model
                 decimal total = 0;
                 foreach (Konto konto in _konten)
                 {
-                    konto.BerechneSaldo();
+                    total += konto.BerechneSaldo();
                 }
                 return total;
             }
