@@ -4,7 +4,12 @@ namespace Bookkeeper.Controller.Commands
 {
     public class BuchenCommand : Command
     {
-        private const string _beschreibung = "beschreibung . . .";
+        private const string _beschreibung =
+            "Mit diesm Befehl kann man Buchungssätze bilden und diese ausführen.\n" +
+            "Verwende dazu folgende Syntax:\n\n" +
+            "buche <Sollkonto> <Habenkonto> <Betrag>\n\n" +
+            "Man kann auch mit folgendem Befehl einen Buchungstext angeben:\n\n" +
+            "buche <Sollkonto> <Habenkonto> <Betrag> --text <Buchungstext>";
 
         public BuchenCommand()
             : base("buche", _beschreibung)
