@@ -14,12 +14,13 @@ namespace Bookkeeper.Controller
 
         public void FuegeCommandHinzu(Command command)
         {
-            throw new NotImplementedException();
+            _commands.Add(command.Name, command);
         }
 
         public void FuehreCommandAus(string[] args)
         {
-            throw new NotImplementedException();
+            Command command = _commands[args[0]];
+            command.Ausfuehren(args);
         }
     }
 }
