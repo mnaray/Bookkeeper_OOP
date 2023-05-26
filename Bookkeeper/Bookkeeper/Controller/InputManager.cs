@@ -14,7 +14,7 @@ namespace Bookkeeper.Controller
             _currentCommand = Array.Empty<string>();
             try
             {
-                _currentCommand = input.Trim().Split(' ')!;
+                _currentCommand = input.Trim().Split(' ');
                 if (!ValidiereInput())
                 {
                     throw new Exception("Format des eingegebenen Befehls ist invalid.");
