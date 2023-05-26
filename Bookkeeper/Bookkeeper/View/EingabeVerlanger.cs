@@ -1,15 +1,27 @@
-﻿namespace Bookkeeper.View
+﻿using System.Text;
+
+namespace Bookkeeper.View
 {
     public class EingabeVerlanger : IView
     {
         public void GibAnsichtAus()
         {
-            throw new NotImplementedException();
+            Console.WriteLine(ErstelleAnsicht());
         }
 
         public string ErstelleAnsicht()
         {
-            throw new NotImplementedException();
+            StringBuilder abtrennung = new StringBuilder(Environment.NewLine);
+            string forderung = "Gib einen Befehl ein: ";
+
+            for (int i = 0; i < Console.WindowWidth; i++)
+            {
+                abtrennung.Append("-");
+            }
+
+            abtrennung.Append(Environment.NewLine);
+
+            return abtrennung.ToString() + forderung;
         }
     }
 }
