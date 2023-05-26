@@ -16,11 +16,11 @@ namespace Bookkeeper.Controller
 
             try
             {
+                _currentCommand = input.Trim().Split(' ')!;
                 if (!ValidiereInput())
                 {
                     throw new Exception("Format des eingegebenen Befehls ist invalid.");
                 }
-                _currentCommand = input.Trim().Split(' ')!;
             }
             catch (Exception e)
             {
@@ -30,12 +30,15 @@ namespace Bookkeeper.Controller
 
         public void VersucheAusfuehrung()
         {
-            throw new NotImplementedException();
+            
         }
 
         private bool ValidiereInput()
         {
-            throw new NotImplementedException();
+            if (_currentCommand.Length <= 0) { return false; } // check array length
+            if (_currentCommand[0].Length <= 2) { return false; } // check min length of command
+            if (!_commandManager.Commands.ContainsKey(_currentCommand[0])) { return false; }
+            return true;
         }
     }
 }

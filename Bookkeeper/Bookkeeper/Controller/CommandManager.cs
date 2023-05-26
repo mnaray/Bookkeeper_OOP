@@ -5,6 +5,7 @@ namespace Bookkeeper.Controller
     public class CommandManager
     {
         private Dictionary<string, Command> _commands;
+        public Dictionary<string, Command> Commands { get { return _commands; } }
 
         public CommandManager()
         {
