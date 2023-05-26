@@ -28,7 +28,7 @@ namespace Bookkeeper.Controller
             }
         }
 
-        public void VersucheAuszuführen()
+        public void VersucheAusfuehrung()
         {
             throw new NotImplementedException();
         }
