@@ -1,16 +1,26 @@
-﻿namespace Bookkeeper.Controller.Commands
+﻿using Bookkeeper.View;
+
+namespace Bookkeeper.Controller.Commands
 {
     public class HilfeCommand : Command
     {
-        private const string _beschreibung = "beschreibung . . .";
+        private const string _beschreibung =
+            "Dieser Befehl listet alle möglichen Befehle auf und beschreibt sie.";
 
         public HilfeCommand()
-            : base("help", _beschreibung)
+            : base("hilfe", _beschreibung)
         { }
 
         public override void Ausfuehren(string[] args)
         {
-            throw new NotImplementedException();
+            if (args.Length > 1)
+            {
+                throw new Exception($"<{this.Name}> verwendet keine Argumente.");
+            }
+
+            CommandManager cm = new CommandManager();
+            BefehlHilfeView view = new BefehlHilfeView(cm.Commands);
+            view.GibAnsichtAus();
         }
     }
 }
