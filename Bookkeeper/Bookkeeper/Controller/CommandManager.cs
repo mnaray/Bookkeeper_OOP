@@ -9,7 +9,7 @@ namespace Bookkeeper.Controller
 
         public CommandManager()
         {
-
+            _commands = new Dictionary<string, Command>();
         }
 
         public void FuegeCommandHinzu(Command command)
@@ -17,7 +17,7 @@ namespace Bookkeeper.Controller
             throw new NotImplementedException();
         }
 
-        public void FuehreCommandAus(string commandName)
+        public void FuehreCommandAus(string[] args)
         {
             throw new NotImplementedException();
         }

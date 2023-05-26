@@ -33,7 +33,15 @@ namespace Bookkeeper.Controller
 
         public void VersucheAusfuehrung()
         {
-            
+            try
+            {
+                _commandManager.FuehreCommandAus(_currentCommand);
+            }
+            catch (Exception e)
+            {
+                string nachricht = "Es ist ein Fehler bei der Bearbeitung des Befehls aufgetreten.";
+                new ErrorView(e, nachricht).GibAnsichtAus();
+            }
         }
 
         private bool ValidiereInput()
