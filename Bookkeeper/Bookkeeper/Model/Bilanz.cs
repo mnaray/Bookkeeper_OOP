@@ -5,6 +5,7 @@ namespace Bookkeeper.Model
     public class Bilanz
     {
         private List<Konto> _konten = new List<Konto>();
+        public List<Konto> Konten { get { return _konten; } }
         public decimal Total
         {
             get
