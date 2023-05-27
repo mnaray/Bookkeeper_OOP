@@ -1,4 +1,7 @@
-﻿namespace Bookkeeper.Model
+﻿using Bookkeeper.View;
+using System.Data.Common;
+
+namespace Bookkeeper.Model
 {
     public class Buchungssatz
     {
@@ -58,7 +61,23 @@
 
         public void Ausfuehren()
         {
-            throw new NotImplementedException();
+            DbConnection db = DbConnection.GetInstance();
+
+            string query =
+                $"INSERT INTO buchungssaetze " +
+                $"(buchungstext, buchungsdatum, soll_konto_id, haben_konto_id, betrag) " +
+                $"VALUES ({_buchungstetxt}, {_buchungsdatum}, {_sollKonto.KontoId}, " +
+                $"{_habenKonto.KontoId}, {_betrag})";
+
+            try
+            {
+                db.ExecuteQuery(query);
+            }
+            catch (Exception e)
+            {
+                string nachricht = "Fehler bei Ausfuehren den Buchung.";
+                new ErrorView(e, nachricht).GibAnsichtAus();
+            }
         }
     }
 }
