@@ -1,4 +1,5 @@
 ﻿using Bookkeeper.Model;
+using System.Text;
 
 namespace Bookkeeper.Controller.Commands
 {
@@ -51,8 +52,31 @@ namespace Bookkeeper.Controller.Commands
                 throw new Exception($"Konto {habenKontoId} existiert nicht.");
             }
 
-            Buchungssatz buchungssatz = new Buchungssatz(sollKonto, habenKonto, betrag);
-            buchungssatz.Ausfuehren();
+            if (args.Length == 4)
+            {
+                Buchungssatz buchungssatz = new Buchungssatz(sollKonto, habenKonto, betrag);
+                buchungssatz.Ausfuehren();
+            }
+            else if (args.Length > 4 && args[4] == "--text")
+            {
+                string buchungsText = BuchungstextZusammensetzen(args);
+                Buchungssatz buchungssatz = new Buchungssatz(buchungsText, sollKonto, habenKonto, betrag);
+                buchungssatz.Ausfuehren();
+            }
+        }
+
+        private string BuchungstextZusammensetzen(string[] args)
+        {
+            StringBuilder text = new StringBuilder("");
+
+            // start at text beginning in args (index 5)
+            for (int i = 5; i < args.Length; i++)
+            {
+                text.Append(args[i]);
+                text.Append(' ');
+            }
+
+            return text.ToString().Trim();
         }
     }
 }
