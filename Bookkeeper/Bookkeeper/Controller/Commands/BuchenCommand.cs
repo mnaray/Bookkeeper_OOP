@@ -30,7 +30,7 @@ namespace Bookkeeper.Controller.Commands
                 throw new Exception($"<{this.Name}> hat mindestens 4 Argumente.");
             }
 
-            if (!decimal.TryParse(args[4], out betrag))
+            if (!decimal.TryParse(args[3], out betrag))
 
                 if (!int.TryParse(args[1], out sollKontoId) || !int.TryParse(args[2], out habenKontoId))
                 {
