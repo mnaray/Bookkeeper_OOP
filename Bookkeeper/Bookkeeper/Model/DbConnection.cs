@@ -1,4 +1,5 @@
 ﻿using Bookkeeper.View;
+using System.CodeDom;
 using System.Data.SQLite;
 
 namespace Bookkeeper.Model
@@ -21,12 +22,14 @@ namespace Bookkeeper.Model
 
         public void ExecuteQuery(string query)
         {
-            throw new NotImplementedException();
+            SQLiteCommand command = new SQLiteCommand(query, _connection);
+            command.ExecuteNonQuery();
         }
 
         public SQLiteDataReader ExecuteSelectionQuery(string query)
         {
-            throw new NotImplementedException();
+            SQLiteCommand command = new SQLiteCommand(query, _connection);
+            return command.ExecuteReader();
         }
 
         private SQLiteConnection SetUpDB()
@@ -68,7 +71,7 @@ namespace Bookkeeper.Model
         private void ExecuteSetupScript(SQLiteConnection connection)
         {
             // store script file contents
-            FileInfo file = new FileInfo("../setup.sql");
+            FileInfo file = new FileInfo("../../../setup.sql");
             string sqlScript = file.OpenText().ReadToEnd();
 
             // create sql command
