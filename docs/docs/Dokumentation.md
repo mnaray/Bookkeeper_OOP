@@ -29,23 +29,23 @@ Dabei möchte ich grundlegende Design Patterns in der objektorientierten Program
 In der folgenden Tabelle sind die Anforderungen für das Projekt vorzufinden.
 
 
-| Nr. | Muss/<br />Kann | funk./<br />qual./ rand | Beschreibung                                                                                        |
-| ----- | ----------------- | ------------------------- | ----------------------------------------------------------------------------------------------------- |
-| 1   | M               | funk.                   | Die Software muss eine Bilanz nach dem KMU-Kontenrahmen haben.                                      |
-| 2   | K               | funk.                   | Die Software muss eine Erfolgsrechnung nach dem KMU-Kontenrahmen haben.                             |
+| Nr. | Muss/<br />Kann | funk./<br />qual./ rand | Beschreibung                                                                                     |
+| --- | --------------- | ----------------------- | ------------------------------------------------------------------------------------------------ |
+| 1   | M               | funk.                   | Die Software muss eine Bilanz nach dem KMU-Kontenrahmen haben.                                   |
+| 2   | K               | funk.                   | Die Software muss eine Erfolgsrechnung nach dem KMU-Kontenrahmen haben.                          |
 | 3   | M               | funk.                   | Die Software muss Buchungssätze ausführen können und dabei die betroffenen Konten aktualisieren. |
-| 4   | M               | funk.                   | Ein Buchungssatz muss Datum, Buchungstext, Soll-Konto, Haben-Konto und Betrag umfassen.             |
-| 5   | M               | funk.                   | Alle gebuchten Buchungssätze müssen in einer Datenbank gespeichert werden.                        |
-| 6   | M               | funk.                   | Die Bilanz muss in einer Datenbank festgehalten werden.                                             |
-| 7   | M               | funk.                   | Die Software muss über die Kommandozeile bedienbar sein.                                           |
-| 8   | K               | qual.                   | Es soll einen Hilfe-Befehl haben, der alle möglichen Befehle auflistet und erklärt.               |
-| 9   | K               | qual.                   | Jeder Befehl soll eine kleine Erklärung dazu haben.                                                |
-| 10  | M               | funk.                   | Es braucht einen Befehl, um Buchungssätze zu bilden.                                               |
-| 11  | M               | funk.                   | Es braucht einen Befehl, um die Bilanz auszugeben.                                                  |
-| 12  | K               | funk.                   | Es braucht einen Befehl, um die Erfolgsrechnung auszugeben.                                         |
-| 13  | M               | rand                    | Es muss ein Klassendiagramm in UML vorhanden sein.                                                  |
-| 14  | M               | rand                    | Die Software muss nach dem MVC-Konzept aufgebaut sein.                                              |
-| 15  | M               | rand                    | Diese erste Version soll vollständig auf Deutsch sein.                                             |
+| 4   | M               | funk.                   | Ein Buchungssatz muss Datum, Buchungstext, Soll-Konto, Haben-Konto und Betrag umfassen.          |
+| 5   | M               | funk.                   | Alle gebuchten Buchungssätze müssen in einer Datenbank gespeichert werden.                       |
+| 6   | M               | funk.                   | Die Bilanz muss in einer Datenbank festgehalten werden.                                          |
+| 7   | M               | funk.                   | Die Software muss über die Kommandozeile bedienbar sein.                                         |
+| 8   | K               | qual.                   | Es soll einen Hilfe-Befehl haben, der alle möglichen Befehle auflistet und erklärt.              |
+| 9   | K               | qual.                   | Jeder Befehl soll eine kleine Erklärung dazu haben.                                              |
+| 10  | M               | funk.                   | Es braucht einen Befehl, um Buchungssätze zu bilden.                                             |
+| 11  | M               | funk.                   | Es braucht einen Befehl, um die Bilanz auszugeben.                                               |
+| 12  | K               | funk.                   | Es braucht einen Befehl, um die Erfolgsrechnung auszugeben.                                      |
+| 13  | M               | rand                    | Es muss ein Klassendiagramm in UML vorhanden sein.                                               |
+| 14  | M               | rand                    | Die Software muss nach dem MVC-Konzept aufgebaut sein.                                           |
+| 15  | M               | rand                    | Diese erste Version soll vollständig auf Deutsch sein.                                           |
 
 ### Technologien
 
@@ -63,6 +63,7 @@ Hier sind alle Quellen aufgelistet, welche während dem Aublauf des Projekts als
 - [SQLite offizielle Doku](https://sqlite.org/docs.html)
 - [Anwendung von SQLite in einer C# App](https://www.codeguru.com/dotnet/using-sqlite-in-a-c-application/)
 - [Ausführen von Scripts mit SQLite in C#](https://stackoverflow.com/questions/650098/how-to-execute-an-sql-script-file-using-c-sharp)
+- [SQLite Selektionen in C#](https://alexb72.medium.com/how-to-insert-select-data-using-sqlite-in-a-c-console-application-31d5c6ba88b8)
 
 ## Planen
 
@@ -70,8 +71,8 @@ Hier sind alle Quellen aufgelistet, welche während dem Aublauf des Projekts als
 
 
 | Nr. | Frist      | Beschreibung                                                   | Geplante Zeit in Paketen |
-| ----- | ------------ | :--------------------------------------------------------------- | -------------------------- |
-| 1   | 28.04.2023 | Informieren (von IPERKA): vor allem über Design Patterns      | 5 (ggf. mehr)            |
+| --- | ---------- | :------------------------------------------------------------- | ------------------------ |
+| 1   | 28.04.2023 | Informieren (von IPERKA): vor allem über Design Patterns       | 5 (ggf. mehr)            |
 | 2   | 28.04.2023 | Planen und Entscheiden (von IPERKA): Tests erstellen           | 2                        |
 | 3   | 28.04.2023 | Planen und Entscheiden (von IPERKA): Klassendiagramm erstellen | 3                        |
 | 4   | 12.05.2023 | Realisieren (von IPERKA): Klassen ausprogrammieren             | 10                       |
@@ -94,21 +95,21 @@ Hier sind alle Quellen aufgelistet, welche während dem Aublauf des Projekts als
 ### Ausführung
 
 
-| Nr. | Frist      | Bemerkung                            | Zeit geplant | Zeit effektiv |
-| ----- | ------------ | -------------------------------------- | -------------- | --------------- |
+| Nr. | Frist      | Bemerkung                           | Zeit geplant | Zeit effektiv |
+| --- | ---------- | ----------------------------------- | ------------ | ------------- |
 | 1   | 28.04.2023 | Zusätzlich in SQLite eingearbeitet. | 5            | 8             |
-| 2   | 28.04.2023 |                                      | 2            |               |
-| 3   | 28.04.2023 |                                      | 3            |               |
-| 4   | 12.05.2023 |                                      | 10           |               |
-| 5   | 26.05.2023 |                                      | 3            |               |
-| 6   | 26.05.2023 |                                      | 2            |               |
-| 7   | 02.06.2023 |                                      | 3            |               |
+| 2   | 28.04.2023 |                                     | 2            |               |
+| 3   | 28.04.2023 |                                     | 3            |               |
+| 4   | 12.05.2023 |                                     | 10           |               |
+| 5   | 26.05.2023 |                                     | 3            |               |
+| 6   | 26.05.2023 |                                     | 2            |               |
+| 7   | 02.06.2023 |                                     | 3            |               |
 
 ### Testfälle
 
 
 | Testf.<br />Nr. | Anf.<br />Nr. | Voraussetzungen | Testumgebung | Eingabe | Erw. Ausgabe |
-| ----------------- | --------------- | ----------------- | -------------- | --------- | -------------- |
+| --------------- | ------------- | --------------- | ------------ | ------- | ------------ |
 | 1.1             | 1             |                 |              |         |              |
 | 2.1             | 2             |                 |              |         |              |
 
