@@ -1,5 +1,4 @@
-﻿using Bookkeeper.Controller.Commands;
-using Bookkeeper.View;
+﻿using Bookkeeper.View;
 
 namespace Bookkeeper.Controller
 {

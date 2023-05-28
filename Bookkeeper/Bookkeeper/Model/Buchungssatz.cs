@@ -1,5 +1,4 @@
 ﻿using Bookkeeper.View;
-using System.Data.Common;
 
 namespace Bookkeeper.Model
 {
@@ -27,7 +26,7 @@ namespace Bookkeeper.Model
             _habenKonto = habenKonto;
             _betrag = betrag;
         }
-        
+
         public Buchungssatz(string buchungstext, Konto sollKonto,
             Konto habenKonto, decimal betrag)
         {
@@ -38,7 +37,7 @@ namespace Bookkeeper.Model
             _habenKonto = habenKonto;
             _betrag = betrag;
         }
-        
+
         public Buchungssatz(int id, Konto sollKonto, Konto habenKonto, decimal betrag)
         {
             _id = id;

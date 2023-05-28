@@ -1,6 +1,5 @@
 ﻿using Bookkeeper.Controller;
 using Bookkeeper.View;
-using System.Data.SQLite;
 using System.Diagnostics;
 
 namespace Bookkeeper

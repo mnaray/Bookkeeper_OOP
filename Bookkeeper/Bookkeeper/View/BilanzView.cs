@@ -6,7 +6,7 @@
         {
             throw new NotImplementedException();
         }
-        
+
         public string ErstelleAnsicht()
         {
             throw new NotImplementedException();

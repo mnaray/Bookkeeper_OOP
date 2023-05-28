@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Bookkeeper.View
+﻿namespace Bookkeeper.View
 {
     public class ErrorView : IView
     {
@@ -12,7 +10,7 @@ namespace Bookkeeper.View
             _exception = exception;
             _optionaleNachricht = "Ein Fehler ist aufgetreten!";
         }
-        
+
         public ErrorView(Exception exception, string optionaleNachricht)
         {
             _exception = exception;
