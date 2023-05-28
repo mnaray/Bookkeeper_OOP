@@ -22,7 +22,10 @@ namespace Bookkeeper
             {
                 new EingabeVerlanger().GibAnsichtAus();
                 input = Console.ReadLine() ?? "";
-                new InputManager(input).VersucheAusfuehrung();
+                if (input != "exit")
+                {
+                    new InputManager(input).VersucheAusfuehrung();
+                }
             }
         }
     }
