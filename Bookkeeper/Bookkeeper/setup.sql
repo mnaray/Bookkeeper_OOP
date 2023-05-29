@@ -23,7 +23,7 @@ CREATE TABLE buchungssaetze (
 );
 
 INSERT INTO bilanz_konto_typen (typ_id, typ_name)
-VALUES (1, 'activ'), (2, 'passiv');
+VALUES (1, 'aktiv'), (2, 'passiv');
 
 INSERT INTO bilanz_konten (konto_id, konto_name, konto_typ)
 VALUES
