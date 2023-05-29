@@ -33,7 +33,7 @@ namespace Bookkeeper.Model
             {
                 try
                 {
-                    int id = (int)reader["konto_id"];
+                    int id = Convert.ToInt32(reader["konto_id"]);
                     string name = (string)reader["konto_name"];
                     string typ = (string)reader["typ_name"]; // aktiv od. passiv
 
@@ -50,7 +50,14 @@ namespace Bookkeeper.Model
 
         public Dictionary<Konto, decimal> StecheBilanz()
         {
-            throw new NotImplementedException();
+            Dictionary<Konto, decimal> salden = new Dictionary<Konto, decimal>();
+
+            foreach (Konto konto in _konten)
+            {
+                salden.Add(konto, konto.BerechneSaldo());
+            }
+
+            return salden;
         }
     }
 }
