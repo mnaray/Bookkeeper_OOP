@@ -71,7 +71,7 @@ namespace Bookkeeper.Model
         private void ExecuteSetupScript(SQLiteConnection connection)
         {
             // store script file contents
-            FileInfo file = new FileInfo("../../../setup.sql");
+            FileInfo file = new FileInfo("./setup.sql");
             string sqlScript = file.OpenText().ReadToEnd();
 
             // create sql command
