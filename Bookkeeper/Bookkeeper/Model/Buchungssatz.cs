@@ -66,7 +66,7 @@ namespace Bookkeeper.Model
                 $"INSERT INTO buchungssaetze " +
                 $"(buchungstext, buchungsdatum, soll_konto_id, haben_konto_id, betrag) " +
                 $"VALUES ('{_buchungstetxt}', {_buchungsdatum}, {_sollKonto.KontoId}, " +
-                $"{_habenKonto.KontoId}, {_betrag})";
+                $"{_habenKonto.KontoId}, {Math.Round(_betrag, 2)})";
 
             try
             {
