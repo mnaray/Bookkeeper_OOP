@@ -60,6 +60,12 @@ namespace Bookkeeper.Model
 
         public void Ausfuehren()
         {
+            if (_sollKonto.KontoId == _habenKonto.KontoId)
+            {
+                throw new Exception("Buchung mit zwei Mal demselben Konto ist nicht erlaubt.");
+            }
+
+
             DbConnection db = DbConnection.GetInstance();
 
             string query =
