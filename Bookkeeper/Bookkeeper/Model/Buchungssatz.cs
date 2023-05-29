@@ -65,10 +65,6 @@ namespace Bookkeeper.Model
                 throw new Exception("Buchung mit zwei Mal demselben Konto ist nicht erlaubt.");
             }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> e4e2135140774601922016b9673d7dac9189709f
             DbConnection db = DbConnection.GetInstance();
 
             string query =
