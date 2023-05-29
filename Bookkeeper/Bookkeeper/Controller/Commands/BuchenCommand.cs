@@ -31,11 +31,14 @@ namespace Bookkeeper.Controller.Commands
             }
 
             if (!decimal.TryParse(args[3], out betrag))
+            {
+                throw new Exception("Der eingegebene Betrag ist nicht valid.");
+            }
 
-                if (!int.TryParse(args[1], out sollKontoId) || !int.TryParse(args[2], out habenKontoId))
-                {
-                    throw new Exception($"Eines der angegebenen Kontennummern ist keine grade Zahl");
-                }
+            if (!int.TryParse(args[1], out sollKontoId) || !int.TryParse(args[2], out habenKontoId))
+            {
+                throw new Exception("Eines der angegebenen Kontennummern ist keine grade Zahl");
+            }
 
             Bilanz bilanz = new Bilanz();
 

@@ -65,7 +65,7 @@ namespace Bookkeeper.Model
             string query =
                 $"INSERT INTO buchungssaetze " +
                 $"(buchungstext, buchungsdatum, soll_konto_id, haben_konto_id, betrag) " +
-                $"VALUES ({_buchungstetxt}, {_buchungsdatum}, {_sollKonto.KontoId}, " +
+                $"VALUES ('{_buchungstetxt}', {_buchungsdatum}, {_sollKonto.KontoId}, " +
                 $"{_habenKonto.KontoId}, {_betrag})";
 
             try
