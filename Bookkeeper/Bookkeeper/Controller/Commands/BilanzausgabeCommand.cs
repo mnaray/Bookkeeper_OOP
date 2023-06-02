@@ -40,7 +40,7 @@ namespace Bookkeeper.Controller.Commands
             }
 
             DateTime datum = DateTime.UtcNow;
-            if (args.Length > 1 && (!DateTime.TryParse(args[2], out datum) || args[2].Length != 12))
+            if (args.Length > 1 && (!DateTime.TryParse(args[2], out datum) || args[2].Length != 10))
             {
                 throw new Exception("Das angegebene Datum ist nicht im richtigen Format. (TT.MM.JJJJ)");
             }

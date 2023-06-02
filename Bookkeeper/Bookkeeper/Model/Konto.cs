@@ -22,8 +22,9 @@ namespace Bookkeeper.Model
             DbConnection db = DbConnection.GetInstance();
             string query = // TODO: check if ' around the ID makes a difference (it shouldn't)
                 $"SELECT * FROM buchungssaetze " +
-                $"WHERE soll_konto_id = {_kontoId} " +
-                $"OR soll_konto_id = {_kontoId};";
+                $"WHERE (soll_konto_id = {_kontoId} " +
+                $"OR soll_konto_id = {_kontoId}) " +
+                $"AND (buchungsdatum <= {datum});";
 
             SQLiteDataReader reader = db.ExecuteSelectionQuery(query);
 
