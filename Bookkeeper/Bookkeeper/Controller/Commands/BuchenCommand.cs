@@ -30,11 +30,6 @@ namespace Bookkeeper.Controller.Commands
                 throw new Exception($"<{this.Name}> hat mindestens 3 Argumente.");
             }
 
-            if (args.Length > 6)
-            {
-                throw new Exception($"<{this.Name}> hat nicht mehr als 5 Argumente");
-            }
-
             if (!decimal.TryParse(args[3], out betrag))
             {
                 throw new Exception("Der eingegebene Betrag ist nicht valid.");
