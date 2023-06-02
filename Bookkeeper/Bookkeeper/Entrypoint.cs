@@ -10,7 +10,7 @@ namespace Bookkeeper
         {
             // Entrypoint to application
             StarteProgram();
-            if (Debugger.IsAttached) { Console.ReadKey(); }
+            //if (Debugger.IsAttached) { Console.ReadKey(); }
         }
 
         private static void StarteProgram()
