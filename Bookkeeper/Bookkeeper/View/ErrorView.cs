@@ -26,7 +26,7 @@
 
         public string ErstelleAnsicht()
         {
-            string teil1 = Environment.NewLine + "----" + _optionaleNachricht + "----" + Environment.NewLine;
+            string teil1 = Environment.NewLine + "----" + Environment.NewLine + _optionaleNachricht + Environment.NewLine + "----" + Environment.NewLine;
             string teil2 = _exception.Message + Environment.NewLine;
             return teil1 + teil2;
         }
