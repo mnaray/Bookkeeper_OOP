@@ -11,9 +11,10 @@ namespace Bookkeeper.Model
             get
             {
                 decimal total = 0;
+                int jetzt = UnixTimestampConverter.DateTimeToUnixTimestamp(DateTime.UtcNow);
                 foreach (Konto konto in _konten)
                 {
-                    total += konto.BerechneSaldo();
+                    total += konto.BerechneSaldo(jetzt);
                 }
                 return total;
             }
@@ -46,15 +47,18 @@ namespace Bookkeeper.Model
                     throw new Exception("Kontotyp konnte bei Bilanzgeneration nicht korrekt verarbeitet werden.");
                 }
             }
+
+            // sort by ascending ID for prettier view
+            _konten.Sort((x, y) => x.KontoId.CompareTo(y.KontoId));
         }
 
-        public Dictionary<Konto, decimal> StecheBilanz()
+        public Dictionary<Konto, decimal> StecheBilanz(int datum)
         {
             Dictionary<Konto, decimal> salden = new Dictionary<Konto, decimal>();
 
             foreach (Konto konto in _konten)
             {
-                salden.Add(konto, konto.BerechneSaldo());
+                salden.Add(konto, konto.BerechneSaldo(datum));
             }
 
             return salden;

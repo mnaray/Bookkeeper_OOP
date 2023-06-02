@@ -16,7 +16,7 @@
             throw new NotImplementedException();
         }
 
-        public override decimal BerechneSaldo()
+        public override decimal BerechneSaldo(int datum)
         {
             throw new NotImplementedException();
         }

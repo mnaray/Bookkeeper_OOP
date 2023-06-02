@@ -15,6 +15,6 @@
 
         public abstract void TaetigeSollBuchung(decimal betrag);
         public abstract void TaetigeHabenBuchung(decimal betrag);
-        public abstract decimal BerechneSaldo();
+        public abstract decimal BerechneSaldo(int datum);
     }
 }
