@@ -47,9 +47,6 @@ namespace Bookkeeper.Model
                     throw new Exception("Kontotyp konnte bei Bilanzgeneration nicht korrekt verarbeitet werden.");
                 }
             }
-
-            // sort by ascending ID for prettier view
-            _konten.Sort((x, y) => x.KontoId.CompareTo(y.KontoId));
         }
 
         public Dictionary<Konto, decimal> StecheBilanz(int datum)
