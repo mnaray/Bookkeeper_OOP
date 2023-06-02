@@ -8,17 +8,12 @@
 
         public override void TaetigeSollBuchung(decimal betrag)
         {
-            throw new NotImplementedException();
+            _kontostand -= betrag;
         }
 
         public override void TaetigeHabenBuchung(decimal betrag)
         {
-            throw new NotImplementedException();
-        }
-
-        public override decimal BerechneSaldo(int datum)
-        {
-            throw new NotImplementedException();
+            _kontostand += betrag;
         }
     }
 }
