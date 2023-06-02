@@ -21,7 +21,7 @@ namespace Bookkeeper.Model
         {
             _id = id;
             _buchungstetxt = buchungstext;
-            _buchungsdatum = (int)DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1)).TotalSeconds;
+            _buchungsdatum = UnixTimestampConverter.DateTimeToUnixTimestamp(DateTime.UtcNow);
             _sollKonto = sollKonto;
             _habenKonto = habenKonto;
             _betrag = betrag;
@@ -32,7 +32,7 @@ namespace Bookkeeper.Model
         {
             _id = null;
             _buchungstetxt = buchungstext;
-            _buchungsdatum = (int)DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1)).TotalSeconds;
+            _buchungsdatum = UnixTimestampConverter.DateTimeToUnixTimestamp(DateTime.UtcNow);
             _sollKonto = sollKonto;
             _habenKonto = habenKonto;
             _betrag = betrag;
@@ -42,7 +42,7 @@ namespace Bookkeeper.Model
         {
             _id = id;
             _buchungstetxt = "Kein Buchungstext wurde angegeben.";
-            _buchungsdatum = (int)DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1)).TotalSeconds;
+            _buchungsdatum = UnixTimestampConverter.DateTimeToUnixTimestamp(DateTime.UtcNow);
             _sollKonto = sollKonto;
             _habenKonto = habenKonto;
             _betrag = betrag;
@@ -52,7 +52,7 @@ namespace Bookkeeper.Model
         {
             _id = null;
             _buchungstetxt = "Kein Buchungstext wurde angegeben.";
-            _buchungsdatum = (int)DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1)).TotalSeconds;
+            _buchungsdatum = UnixTimestampConverter.DateTimeToUnixTimestamp(DateTime.UtcNow);
             _sollKonto = sollKonto;
             _habenKonto = habenKonto;
             _betrag = betrag;

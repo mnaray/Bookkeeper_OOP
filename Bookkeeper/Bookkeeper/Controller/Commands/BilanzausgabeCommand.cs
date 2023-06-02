@@ -1,4 +1,5 @@
-﻿using Bookkeeper.View;
+﻿using Bookkeeper.Model;
+using Bookkeeper.View;
 
 namespace Bookkeeper.Controller.Commands
 {
@@ -26,7 +27,7 @@ namespace Bookkeeper.Controller.Commands
 
             if (args.Length == 1) // no date
             {
-                int jetzt = (int)DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1)).TotalSeconds;
+                int jetzt = UnixTimestampConverter.DateTimeToUnixTimestamp(DateTime.UtcNow);
                 BilanzView view = new BilanzView(jetzt);
                 view.GibAnsichtAus();
                 return;
@@ -38,18 +39,18 @@ namespace Bookkeeper.Controller.Commands
                 throw new Exception("Das angegebene Argument ist nicht bekannt.");
             }
 
-            DateTime datum = DateTime.Now;
+            DateTime datum = DateTime.UtcNow;
             if (args.Length > 1 && (!DateTime.TryParse(args[2], out datum) || args[2].Length != 12))
             {
                 throw new Exception("Das angegebene Datum ist nicht im richtigen Format. (TT.MM.JJJJ)");
             }
 
-            if (datum > DateTime.Now)
+            if (datum > DateTime.UtcNow)
             {
                 throw new Exception("Das Datum muss in der Vergangenheit sein.");
             }
 
-            int datumUnixTimestamp = (int)datum.Subtract(new DateTime(1970, 1, 1)).TotalSeconds;
+            int datumUnixTimestamp = UnixTimestampConverter.DateTimeToUnixTimestamp(datum);
             BilanzView vergangenheitsView = new BilanzView(datumUnixTimestamp);
             vergangenheitsView.GibAnsichtAus();
         }
