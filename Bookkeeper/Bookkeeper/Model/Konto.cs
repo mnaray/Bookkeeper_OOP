@@ -6,7 +6,7 @@ namespace Bookkeeper.Model
     {
         private int _kontoId;
         private string _kontoName;
-        protected decimal? _kontostand;
+        protected decimal _kontostand;
         public int KontoId { get { return _kontoId; } }
         public string KontoName { get { return _kontoName; } }
 
@@ -14,15 +14,16 @@ namespace Bookkeeper.Model
         {
             _kontoId = kontoId;
             _kontoName = kontoName;
+            _kontostand = 0;
         }
 
         public decimal BerechneSaldo(int datum)
         {
             DbConnection db = DbConnection.GetInstance();
             string query = // TODO: check if ' around the ID makes a difference (it shouldn't)
-                $"SELECT * FROM buchungssaetze" +
-                $"WHERE soll_konto_id = {_kontoId}" +
-                $"OR soll_konto_id = {_kontoName};";
+                $"SELECT * FROM buchungssaetze " +
+                $"WHERE soll_konto_id = {_kontoId} " +
+                $"OR soll_konto_id = {_kontoId};";
 
             SQLiteDataReader reader = db.ExecuteSelectionQuery(query);
 
@@ -46,7 +47,7 @@ namespace Bookkeeper.Model
                 }
             }
 
-            return _kontostand ?? 0;
+            return _kontostand;
         }
 
         public abstract void TaetigeSollBuchung(decimal betrag);
