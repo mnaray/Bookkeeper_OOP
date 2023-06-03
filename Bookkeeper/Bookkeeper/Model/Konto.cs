@@ -20,7 +20,7 @@ namespace Bookkeeper.Model
         public decimal BerechneSaldo(int datum)
         {
             DbConnection db = DbConnection.GetInstance();
-            string query = // TODO: check if ' around the ID makes a difference (it shouldn't)
+            string query =
                 $"SELECT * FROM buchungssaetze " +
                 $"WHERE (soll_konto_id = {_kontoId} " +
                 $"OR soll_konto_id = {_kontoId}) " +
