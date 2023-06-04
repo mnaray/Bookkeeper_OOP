@@ -23,7 +23,7 @@ namespace Bookkeeper.Model
             string query =
                 $"SELECT * FROM buchungssaetze " +
                 $"WHERE (soll_konto_id = {_kontoId} " +
-                $"OR soll_konto_id = {_kontoId}) " +
+                $"OR haben_konto_id = {_kontoId}) " +
                 $"AND (buchungsdatum <= {datum});";
 
             SQLiteDataReader reader = db.ExecuteSelectionQuery(query);
