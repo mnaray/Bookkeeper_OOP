@@ -12,14 +12,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Model\" />
-    <Folder Include="Controller\" />
-    <Folder Include="View\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Update="setup.sql">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
 
