@@ -29,23 +29,23 @@ Dabei möchte ich grundlegende Design Patterns in der objektorientierten Program
 In der folgenden Tabelle sind die Anforderungen für das Projekt vorzufinden.
 
 
-| Nr. | Muss/<br />Kann | funk./<br />qual./ rand | Beschreibung                                                                                     |
-| --- | --------------- | ----------------------- | ------------------------------------------------------------------------------------------------ |
-| 1   | M               | funk.                   | Die Software muss eine Bilanz nach dem KMU-Kontenrahmen haben.                                   |
-| 2   | K               | funk.                   | Die Software muss eine Erfolgsrechnung nach dem KMU-Kontenrahmen haben.                          |
+| Nr. | Muss/<br />Kann | funk./<br />qual./ rand | Beschreibung                                                                                        |
+| ----- | ----------------- | ------------------------- | ----------------------------------------------------------------------------------------------------- |
+| 1   | M               | funk.                   | Die Software muss eine Bilanz nach dem KMU-Kontenrahmen haben.                                      |
+| 2   | K               | funk.                   | Die Software muss eine Erfolgsrechnung nach dem KMU-Kontenrahmen haben.                             |
 | 3   | M               | funk.                   | Die Software muss Buchungssätze ausführen können und dabei die betroffenen Konten aktualisieren. |
-| 4   | M               | funk.                   | Ein Buchungssatz muss Datum, Buchungstext, Soll-Konto, Haben-Konto und Betrag umfassen.          |
-| 5   | M               | funk.                   | Alle gebuchten Buchungssätze müssen in einer Datenbank gespeichert werden.                       |
-| 6   | M               | funk.                   | Die Bilanz muss in einer Datenbank festgehalten werden.                                          |
-| 7   | M               | funk.                   | Die Software muss über die Kommandozeile bedienbar sein.                                         |
-| 8   | K               | qual.                   | Es soll einen Hilfe-Befehl haben, der alle möglichen Befehle auflistet und erklärt.              |
-| 9   | K               | qual.                   | Jeder Befehl soll eine kleine Erklärung dazu haben.                                              |
-| 10  | M               | funk.                   | Es braucht einen Befehl, um Buchungssätze zu bilden.                                             |
-| 11  | M               | funk.                   | Es braucht einen Befehl, um die Bilanz auszugeben.                                               |
-| 12  | K               | funk.                   | Es braucht einen Befehl, um die Erfolgsrechnung auszugeben.                                      |
-| 13  | M               | rand                    | Es muss ein Klassendiagramm in UML vorhanden sein.                                               |
-| 14  | M               | rand                    | Die Software muss nach dem MVC-Konzept aufgebaut sein.                                           |
-| 15  | M               | rand                    | Diese erste Version soll vollständig auf Deutsch sein.                                           |
+| 4   | M               | funk.                   | Ein Buchungssatz muss Datum, Buchungstext, Soll-Konto, Haben-Konto und Betrag umfassen.             |
+| 5   | M               | funk.                   | Alle gebuchten Buchungssätze müssen in einer Datenbank gespeichert werden.                        |
+| 6   | M               | funk.                   | Die Bilanz muss in einer Datenbank festgehalten werden.                                             |
+| 7   | M               | funk.                   | Die Software muss über die Kommandozeile bedienbar sein.                                           |
+| 8   | K               | qual.                   | Es soll einen Hilfe-Befehl haben, der alle möglichen Befehle auflistet und erklärt.               |
+| 9   | K               | qual.                   | Jeder Befehl soll eine Erklärung der Syntax dazu haben.                                            |
+| 10  | M               | funk.                   | Es braucht einen Befehl, um Buchungssätze zu bilden.                                               |
+| 11  | M               | funk.                   | Es braucht einen Befehl, um die Bilanz auszugeben.                                                  |
+| 12  | K               | funk.                   | Es braucht einen Befehl, um die Erfolgsrechnung auszugeben.                                         |
+| 13  | M               | rand                    | Es muss ein Klassendiagramm in UML vorhanden sein.                                                  |
+| 14  | M               | rand                    | Die Software muss nach dem MVC-Konzept aufgebaut sein.                                              |
+| 15  | M               | rand                    | Diese erste Version soll vollständig auf Deutsch sein.                                             |
 
 ### Technologien
 
@@ -71,8 +71,8 @@ Hier sind alle Quellen aufgelistet, welche während dem Aublauf des Projekts als
 
 
 | Nr. | Frist      | Beschreibung                                                   | Geplante Zeit in Paketen |
-| --- | ---------- | :------------------------------------------------------------- | ------------------------ |
-| 1   | 28.04.2023 | Informieren (von IPERKA): vor allem über Design Patterns       | 5 (ggf. mehr)            |
+| ----- | ------------ | :--------------------------------------------------------------- | -------------------------- |
+| 1   | 28.04.2023 | Informieren (von IPERKA): vor allem über Design Patterns      | 5 (ggf. mehr)            |
 | 2   | 28.04.2023 | Planen und Entscheiden (von IPERKA): Tests erstellen           | 2                        |
 | 3   | 28.04.2023 | Planen und Entscheiden (von IPERKA): Klassendiagramm erstellen | 3                        |
 | 4   | 12.05.2023 | Realisieren (von IPERKA): Klassen ausprogrammieren             | 10                       |
@@ -95,31 +95,70 @@ Hier sind alle Quellen aufgelistet, welche während dem Aublauf des Projekts als
 ### Ausführung
 
 
-| Nr. | Frist      | Bemerkung                           | Zeit geplant | Zeit effektiv |
-| --- | ---------- | ----------------------------------- | ------------ | ------------- |
+| Nr. | Frist      | Bemerkung                            | Zeit geplant | Zeit effektiv |
+| ----- | ------------ | -------------------------------------- | -------------- | --------------- |
 | 1   | 28.04.2023 | Zusätzlich in SQLite eingearbeitet. | 5            | 8             |
-| 2   | 28.04.2023 |                                     | 2            |               |
-| 3   | 28.04.2023 |                                     | 3            |               |
-| 4   | 12.05.2023 |                                     | 10           |               |
-| 5   | 26.05.2023 |                                     | 3            |               |
-| 6   | 26.05.2023 |                                     | 2            |               |
-| 7   | 02.06.2023 |                                     | 3            |               |
+| 2   | 28.04.2023 |                                      | 2            |               |
+| 3   | 28.04.2023 |                                      | 3            |               |
+| 4   | 12.05.2023 |                                      | 10           |               |
+| 5   | 26.05.2023 |                                      | 3            |               |
+| 6   | 26.05.2023 |                                      | 2            |               |
+| 7   | 02.06.2023 |                                      | 3            |               |
 
 ### Testfälle
 
 
-| Testf.<br />Nr. | Anf.<br />Nr. | Voraussetzungen | Testumgebung | Eingabe | Erw. Ausgabe |
-| --------------- | ------------- | --------------- | ------------ | ------- | ------------ |
-| 1.1             | 1             |                 |              |         |              |
-| 2.1             | 2             |                 |              |         |              |
+| Testf.<br />Nr. | Anf.<br />Nr. | Voraussetzungen                                                                                        | Testumgebung    | Eingabe/Aktion                                                                    | Erw. Ausgabe                                                                                                                                                                                                                                          |
+| ----------------- | --------------- | -------------------------------------------------------------------------------------------------------- | ----------------- | ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1.1             | 1             | Schweizer KMU-Kontenrahmen und setup.sql zur Hand nehmen.                                              | Echte Welt, VSC | KMU-Bilanzkonten mit denen im Insert-Befehl im SQL-Script vergleichen.            | Alle im Kontenrahmen aufgeführten Bilanzkonten kommen im Insert-Befehl vor.                                                                                                                                                                          |
+| 2.1             | 2             | Schweizer KMU-Kontenrahmen und setup.sql zur Hand nehmen.                                              | Echte Welt, VSC | KMU-Erfolgskonten mit denen im Insert-Befehl im SQL-Script vergleichen.           | Alle im Kontenrahmen aufgeführten Erfolgskonten kommen im Insert-Befehl vor.                                                                                                                                                                         |
+| 3.1             | 3             | Anwendung im Debugger starten                                                                          | VS              | "buche 1500 2000 5000"                                                            | "bilanz" -> Maschinen und Apparate = 5000, VLL = 500                                                                                                                                                                                                  |
+| 3.2             | 3             | 3.1 ist ausgeführt.                                                                                   | VS              | "buche 2000 1500 5000"                                                            | "bilanz" -> Maschinen und Apparate = 0, VLL = 0                                                                                                                                                                                                       |
+| 4.1             | 4             | SQLite Datenbankfile öffnen (z.B. mit "sqlite3 [DB-Name]")                                            | SQLite          | "pragma table_info(buchungssaetze);"                                              | ![](assets/20230606_112749_image.png)                                                                                                                                                                                                                 |
+| 5.1             | 5             | SQLite Datenbankfile öffnen (z.B. mit "sqlite3 [DB-Name]"), zusätzlich sind 3.1 und 3.2 ausgeführt. | SQLite          | "SELECT * FROM buchungssaetze;"                                                   | Es sollen die Informationen zu den bei 3 verbuchten Buchungssätzen ausgegeben werden. Das Datum wird als Unix-Timestamp (einem Integer) dargestellt. Da wir keinen Text angegeben haben, soll folgendes stehen: "Kein Buchungstext wurde angegeben." |
+| 6.1             | 6             | SQLite Datenbankfile öffnen (z.B. mit "sqlite3 [DB-Name]")                                            | SQLite          | ".tables"                                                                         | "bilanz_konten" muss in der Ausgabe enthalten sein.                                                                                                                                                                                                   |
+| 7.1             | 7             | .sln mit Visual Studio öffnen.                                                                        | VS              | Auf diesen Knopf klicken. (Debugger starten)![](assets/20230606_113302_image.png) | Eine Linie in der Konsole wird ausgegeben  und darunter steht folgendes: "Gib einen Befehl ein:"                                                                                                                                                      |
+| 8.1             | 8             | 7.1 ist ausgeführt.                                                                                   | VS              | "hilfe"                                                                           | Drei (Stand Juni, 2023) Befehle werden inkl. Beschreibung aufgelistet.                                                                                                                                                                                |
+| 9.1             | 9             | 7.1 ist ausgeführt.                                                                                   | VS              | "hilfe"                                                                           | Es wird in der jeweiligen Beschreibungen auch eine Erklärung zur Syntax aufgeführt.                                                                                                                                                                 |
+| 10.1            | 10            | 7.1 ist ausgeführt.                                                                                   | VS              | "hilfe"                                                                           | In der Ausgabe ist der "buche"-Befehl vorhanden.                                                                                                                                                                                                      |
+| 11.1            | 11            | 7.1 ist ausgeführt.                                                                                   | VS              | "hilfe"                                                                           | In der Ausgabe ist der "bilanz"-Befehl vorhanden.                                                                                                                                                                                                     |
+| 11.2            | 11            | 7.1 ist ausgeführt.                                                                                   | VS              | "bilanz"                                                                          | Alle Bilanzkonten und deren Saldo werden aufgelistet.                                                                                                                                                                                                 |
+| 12.1            | 12            | 7.1 ist ausgeführt.                                                                                   | VS              | "hilfe"                                                                           | In der Ausgabe ist der "erfolg"-Befehl vorhanden.                                                                                                                                                                                                     |
+| 12.2            | 12            | 7.1 ist ausgeführt.                                                                                   | VS              | "erfolg"                                                                          | Alle Erfolgskonten und deren Schlussbestand werden aufgelistet.                                                                                                                                                                                       |
+| 13.1            | 13            | Die Dokumentaiton öffnen.                                                                             | Echte Welt      | Zur Stelle mit dem Klassendiagramm navigieren und dessen Präsenz kontrollieren.  | Das Klassendiagramm befindet sich[hier](http://localhost:3000/Bookkeeper_OOP/docs/Dokumentation#architektur).                                                                                                                                         |
+| 14.1            | 14            | Das Projekt öffnen.                                                                                   | VS              | Die Aufteilung der Klassen in die 3 Folder kontrollieren.                         | Jede Klasse befindet sich im richtigen Folder, somit auch im korrekten Namespace.                                                                                                                                                                     |
+| 14.2            | 14            | 13.1 ist erfüllt.                                                                                     | Echte Welt      | Die Verschiedenen Namespaces im Klassendiagramm kontrollieren.                    | Jede Klasse befindet sich im richtigen Napespace.                                                                                                                                                                                                     |
+| 15.1            | 15            | Projekt in VS öffnen.                                                                                 | VS              | Die Klassen nach Strings durchsuchen.                                             | Jeder String mit Sprachlichem Inhalt im Projekt ist auf Deutsch.                                                                                                                                                                                      |
 
 #### Testumgebungen
 
-* XY
-  * Version 1.2.3
-  * Build xyz123abc
-* AB
-  * Version 1.2.3
+* Microsoft Visual Studio Enterprise (VS)
+  * Microsoft Visual Studio Enterprise 2022
+  * Version: 17.5.5
+  * VisualStudio.17.Release/17.5.5+33627.172
+  * Microsoft .NET Framework: 4.8.04084
+  * Installed Version: Enterprise
+  * C# Tools: 4.5.2-3.23171.7+d17f741546fad2786cbd6394d08619544e53a36d
+  * Microsoft JVM Debugger: 1.0
+  * NuGet Package Manager: 6.5.0
+  * SQL Server Data Tools: 17.2.40120.0
+  * SQLite & SQL Server Compact Toolbox: 4.8
+  * Visual Studio IntelliCode: 2.2
+* Visual Studio Code (VSC)
+  * Version: 1.78.2 (user setup)
+  * Commit: b3e4e68a0bc097f0ae7907b217c1119af9e03435
+  * Date: 2023-05-10T14:39:26.248Z
+  * Electron: 22.5.2
+  * Chromium: 108.0.5359.215
+  * Node.js: 16.17.1
+  * V8: 10.8.168.25-electron.0
+  * OS: Windows_NT x64 10.0.19045
+  * Sandboxed: Yes
+* SQLite
+  * Version: 3.40.1
+* Echte Welt
+  * Jahr 2023
+  * Monat:Juni
 
 ### Architektur
 
