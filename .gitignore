@@ -351,3 +351,7 @@ MigrationBackup/
 
 # SQLite DB
 SQLiDatabase.db
+
+# VPP-Project backup files
+*.bak_*
+*.lck*
