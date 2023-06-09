@@ -170,7 +170,23 @@ Die tatsächliche Ausführung des Projekts sieht um einiges anders aus als in de
 
 #### Klassendiagramm
 
-**HIER KOMMT NOCH EIN BILD VOM FERTIGEN DIAGRAMM HIN!!!**
+![Klassendiagramm](../../VisualParadigm_diagramms/Bookkeeper_automatisches_Klassendiagramm.png)
+
+##### Model Close-Up
+
+![Model close-up](assets/20230609_200725_image.png)
+
+##### View Close-Up
+
+![View close-up](assets/20230609_200912_image.png)
+
+##### Controller Close-Up
+
+![Controller close-up](assets/20230609_200931_image.png)
+
+:::info
+Dieses Klassendiagramm wurde von Visual Paradigm 17.0 generiert und ich habe die Relationen und die Abhängigkeiten noch von Hand ergänzt. Das Bild und das .vpp-Dokument sind in [diesem Folder](https://github.com/mnaray/Bookkeeper_OOP/tree/main/VisualParadigm_diagramms) vorzufinden. *(Die Parameter für Konstruktoren und Methoden sind im Projekt sichtbar, wenn man auf diese klickt.)*
+:::
 
 #### Klassendokumentation
 
@@ -191,8 +207,8 @@ Es gibt auch diverse SQL-DBMS, die sicher funktionieren würden. Am geignetsten 
 
 ### Hilfestellung
 
-Um dieses Projekt zu realisieren habe ich [diese Quellen](#quellen) zu meiner Hilfe genommen.  
-Manchmal bin ich auch zu der betreuenden Lehrperson im Lernatelier (Michael Schneider) für Ratschlag oder eine zweite Meinung gegangen.  
+Um dieses Projekt zu realisieren habe ich [diese Quellen](#quellen) zu meiner Hilfe genommen.
+Manchmal bin ich auch zu der betreuenden Lehrperson im Lernatelier (Michael Schneider) für Ratschlag oder eine zweite Meinung gegangen.
 So konnte ich schlussendlich alle Hürden, die während der Implementation aufgetreten sind, überwinden.
 
 ### Was wurde realisiert?
@@ -210,3 +226,5 @@ Dazu habe ich versucht den Code so erweiterbar wie möglich zu gestalten. Ich m�
 ### Testfazit
 
 ## Auswerten
+
+[def]: /VisualParadigm_diagramms/Bookkeeper_automatisches_Klassendiagramm.png
