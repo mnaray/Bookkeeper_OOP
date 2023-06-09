@@ -189,6 +189,22 @@ Es gibt auch diverse SQL-DBMS, die sicher funktionieren würden. Am geignetsten 
 
 ## Realisieren
 
+### Hilfestellung
+
+Um dieses Projekt zu realisieren habe ich [diese Quellen](#quellen) zu meiner Hilfe genommen.  
+Manchmal bin ich auch zu der betreuenden Lehrperson im Lernatelier (Michael Schneider) für Ratschlag oder eine zweite Meinung gegangen.  
+So konnte ich schlussendlich alle Hürden, die während der Implementation aufgetreten sind, überwinden.
+
+### Was wurde realisiert?
+
+Die Anwendung ist eine Buchhaltungsapplikation, die über die Kommandozeile funktioniert. Ich habe Funktionen und Features gemäss [den Anforderungen](#anforderungen) implementiert. Was dort nicht als Muss-Anforderung aufgelistet ist, wurde auch nicht zwingend implementiert.
+
+### Vorgehen bei der Realisierung
+
+Da diese Anwendung aus einer guten Handvoll an Klassen besteht, habe ich mich dafür entschieden [das MVC-Konzept](https://de.wikipedia.org/wiki/Model_View_Controller) anzuwenden. Die Klassen sind so nach Typ der Verantwortlichkeit aufgeteilt. *(Businesslogik, Ansicht und Darstellung, Kontrolle)*
+
+Dazu habe ich versucht den Code so erweiterbar wie möglich zu gestalten. Ich möchte nämlich in naher Zukunft diese Anwendung als Grundlage für andere Projekte oder Erweiterungen verwenden. So ist es zum Beispiel sehr einfach neue Befehle oder Kontotypen einzubauen.
+
 ## Kontrollieren
 
 ### Testfazit
