@@ -203,6 +203,12 @@ Die Software muss zur Zeit nicht gross skaliert werden, da sie lokal laufen wird
 
 Es gibt auch diverse SQL-DBMS, die sicher funktionieren würden. Am geignetsten wäre aber ganz sicher [SQLite](https://sqlite.org/index.html). Dieses DBMS, weil sie mit der Software geliefert werden kann und einfach gehalten ist. Der einzige Nachteil wäre die Untauglichkeit für Multiuser-Anwendungen, dies schränkt mich hier aber nicht ein.
 
+### Für die Zukunft oder eher nicht?
+
+Ich stelle mir diese Frage deshalb, da ich mir etwas überlegt habe. Und zwar möchte ich dieses Projekt in potentiell zukünftigen Projekten erweitern. (Zum Beispiel mit einer Erfolgsrechnung oder einem GUI).
+
+Und ja, ich habe entschlossen, dass ich in der Zukunft auf das Produkt von diesem Projekt aufbauen möchte. Deshalb muss ich darauf achten, dass der geschriebene Quellcode möglichst leicht erweiterbar ist. Es werden sehr warhscheinlich trotzdem noch Refactorings gebrauch werden, aber ich möchte den zeitlichen Aufwand so tief wie möglich halten.
+
 ## Realisieren
 
 ### Hilfestellung
