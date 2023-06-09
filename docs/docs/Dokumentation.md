@@ -226,5 +226,3 @@ Dazu habe ich versucht den Code so erweiterbar wie m√∂glich zu gestalten. Ich m√
 ### Testfazit
 
 ## Auswerten
-
-[def]: /VisualParadigm_diagramms/Bookkeeper_automatisches_Klassendiagramm.png
