@@ -92,25 +92,6 @@ Hier sind alle Quellen aufgelistet, welche während dem Aublauf des Projekts als
 
 :::
 
-### Ausführung
-
-
-| Nr. | Frist      | Bemerkung                                                                                                                                                                                                                                                                                                | Zeit geplant | Zeit effektiv |
-| ----- | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | --------------- |
-| 1   | 28.04.2023 | Zusätzlich in SQLite eingearbeitet.                                                                                                                                                                                                                                                                     | 5            | 8             |
-| 2   | 28.04.2023 | Die Testfälle brauchten keine 90 Minuten.                                                                                                                                                                                                                                                               | 2            | 1             |
-| 3   | 28.04.2023 | Klassendiagramm hat um einiges länger gebraucht als gedacht. Ich musste doch noch meine UML-Kenntnisse ein wenig auffrischen. Somit habe ich es erst bis auf Mitte Mai fertig bekommen.                                                                                                                 | 3            | 6             |
-| 4   | 12.05.2023 | Das ausprogrammieren hat auch länger gebraucht als geplant. Es haben sich ein paar unnötige Bugs in den Code geschlichen, da ich öfters müde war beim Arbeiten. Ansonsten war ich mit dem Coden zufrieden. Ich konnte aber erst Anfang Juni den Teil mit dem Programmieren volständig abschliessen. | 10           | 13            |
-| 5   | 26.05.2023 | Das Kontrollieren wurde am 16.06.2023 fertiggestellt.                                                                                                                                                                                                                                                    | 3            | 2             |
-| 6   | 26.05.2023 | Die Auswertung wurde auch am 16.06.2023 gemacht.                                                                                                                                                                                                                                                         | 2            | 1             |
-| 7   | 02.06.2023 | Da die Anwendung simpel gehalten ist, habe ich nicht allzu viel zum Schreiben gehabt (über das Produkt). Das Portfolio besteht vor allem aus meiner Verifikation und der Reflexion.                                                                                                                     | 3            | 2             |
-
-:::caution
-
-Die tatsächliche Ausführung des Projekts sieht um einiges anders aus als in der Planung, da wir (die Schüler der Klasse) noch mehr Zeit bis zur Abgabe bekommen haben. Dies ist aufgrund von fehlendem Feedback so, und ohne Feedback wissen wir nicht was zu verbessern ist. Das Portfolio wird/wurde erst viel später als geplant fertiggestellt und abgegeben.
-
-:::
-
 ### Testfälle
 
 
@@ -227,6 +208,25 @@ Die Anwendung ist eine Buchhaltungsapplikation, die über die Kommandozeile funk
 Da diese Anwendung aus einer guten Handvoll an Klassen besteht, habe ich mich dafür entschieden [das MVC-Konzept](https://de.wikipedia.org/wiki/Model_View_Controller) anzuwenden. Die Klassen sind so nach Typ der Verantwortlichkeit aufgeteilt. *(Businesslogik, Ansicht und Darstellung, Kontrolle)*
 
 Dazu habe ich versucht den Code so erweiterbar wie möglich zu gestalten. Ich möchte nämlich in naher Zukunft diese Anwendung als Grundlage für andere Projekte oder Erweiterungen verwenden. So ist es zum Beispiel sehr einfach neue Befehle oder Kontotypen einzubauen.
+
+### Ausführung
+
+
+| Nr. | Frist      | Bemerkung                                                                                                                                                                                                                                                                                                | Zeit geplant | Zeit effektiv |
+| ----- | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | --------------- |
+| 1   | 28.04.2023 | Zusätzlich in SQLite eingearbeitet.                                                                                                                                                                                                                                                                     | 5            | 8             |
+| 2   | 28.04.2023 | Die Testfälle brauchten keine 90 Minuten.                                                                                                                                                                                                                                                               | 2            | 1             |
+| 3   | 28.04.2023 | Klassendiagramm hat um einiges länger gebraucht als gedacht. Ich musste doch noch meine UML-Kenntnisse ein wenig auffrischen. Somit habe ich es erst bis auf Mitte Mai fertig bekommen.                                                                                                                 | 3            | 6             |
+| 4   | 12.05.2023 | Das ausprogrammieren hat auch länger gebraucht als geplant. Es haben sich ein paar unnötige Bugs in den Code geschlichen, da ich öfters müde war beim Arbeiten. Ansonsten war ich mit dem Coden zufrieden. Ich konnte aber erst Anfang Juni den Teil mit dem Programmieren volständig abschliessen. | 10           | 13            |
+| 5   | 26.05.2023 | Das Kontrollieren wurde am 16.06.2023 fertiggestellt.                                                                                                                                                                                                                                                    | 3            | 2             |
+| 6   | 26.05.2023 | Die Auswertung wurde auch am 16.06.2023 gemacht.                                                                                                                                                                                                                                                         | 2            | 1             |
+| 7   | 02.06.2023 | Da die Anwendung simpel gehalten ist, habe ich nicht allzu viel zum Schreiben gehabt (über das Produkt). Das Portfolio besteht vor allem aus meiner Verifikation und der Reflexion.                                                                                                                     | 3            | 2             |
+
+:::caution
+
+Die tatsächliche Ausführung des Projekts sieht um einiges anders aus als in der Planung, da wir (die Schüler der Klasse) noch mehr Zeit bis zur Abgabe bekommen haben. Dies ist aufgrund von fehlendem Feedback so, und ohne Feedback wissen wir nicht was zu verbessern ist. Das Portfolio wird/wurde erst viel später als geplant fertiggestellt und abgegeben.
+
+:::
 
 ## Kontrollieren
 
