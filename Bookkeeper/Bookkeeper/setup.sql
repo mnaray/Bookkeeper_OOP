@@ -68,7 +68,7 @@ VALUES
     (1480, 'Beteiligungen', 1),
     (1489, 'Wertberichtigungen Beteiligungen', 1),
     (150, 'Mobile Sachanlagen', 1),
-    (1500, ' Mobile Sachanlagen', 1),
+    (1500, 'Maschinen und Apparate', 1),
     (1509, 'Wertberichtigungen Maschinen und Apparate', 1),
     (1510, 'Mobiliar und Einrichtungen', 1),
     (1519, 'Wertberichtigungen Mobiliar und Einrichtungen', 1),
