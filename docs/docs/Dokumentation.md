@@ -22,7 +22,7 @@ Design Patterns sind bewährte Lösungsansätze für häufig auftretende Problem
 
 Es ist in diesem Projekt mein Ziel, eine einfache, funktionsfähige Buchhaltungsapplikation für die Kommandozeile zu gestalten und diese dann zu implementieren.
 
-Dabei möchte ich grundlegende Design Patterns in der objektorientierten Programmierung anwenden. So soll der Code einfach Erweiterbar und wartbarer werden. Dies ist mir wichtig, da ich ggf. in zukünftigen Projekten auf diese Anwendung aufbauen möchte.
+Dabei möchte ich, wo nötig, grundlegende Design Patterns in der objektorientierten Programmierung anwenden. So soll der Code einfach Erweiterbar und wartbarer werden. Dies ist mir wichtig, da ich ggf. in zukünftigen Projekten auf diese Anwendung aufbauen möchte.
 
 ### Anforderungen
 
@@ -131,7 +131,7 @@ Die tatsächliche Ausführung des Projekts sieht um einiges anders aus als in de
 | 11.2            | 11            | 7.1 ist ausgeführt.                                                                                   | VS              | "bilanz"                                                                          | Alle Bilanzkonten und deren Saldo werden aufgelistet.                                                                                                                                                                                                 |
 | 12.1            | 12            | 7.1 ist ausgeführt.                                                                                   | VS              | "hilfe"                                                                           | In der Ausgabe ist der "erfolg"-Befehl vorhanden.                                                                                                                                                                                                     |
 | 12.2            | 12            | 7.1 ist ausgeführt.                                                                                   | VS              | "erfolg"                                                                          | Alle Erfolgskonten und deren Schlussbestand werden aufgelistet.                                                                                                                                                                                       |
-| 13.1            | 13            | Die Dokumentaiton öffnen.                                                                             | Chrome          | Zur Stelle mit dem Klassendiagramm navigieren und dessen Präsenz kontrollieren.  | Das Klassendiagramm befindet sich [hier](https://mnaray.github.io/Bookkeeper_OOP/docs/Klassen).                                                                                                                                                        |
+| 13.1            | 13            | Die Dokumentaiton öffnen.                                                                             | Chrome          | Zur Stelle mit dem Klassendiagramm navigieren und dessen Präsenz kontrollieren.  | Das Klassendiagramm befindet sich[hier](https://mnaray.github.io/Bookkeeper_OOP/docs/Klassen).                                                                                                                                                        |
 | 14.1            | 14            | Das Projekt öffnen.                                                                                   | VS              | Die Aufteilung der Klassen in die 3 Folder kontrollieren.                         | Jede Klasse befindet sich im richtigen Folder, somit auch im korrekten Namespace.                                                                                                                                                                     |
 | 14.2            | 14            | 13.1 ist erfüllt.                                                                                     | Visual Paradigm | Die Verschiedenen Namespaces im Klassendiagramm kontrollieren.                    | Jede Klasse befindet sich im richtigen Namespace.                                                                                                                                                                                                     |
 | 15.1            | 15            | Projekt in VS öffnen.                                                                                 | VS              | Die Klassen nach Strings durchsuchen.                                             | Jeder String mit Sprachlichem Inhalt im Projekt ist auf Deutsch.                                                                                                                                                                                      |
@@ -260,3 +260,15 @@ Dazu habe ich versucht den Code so erweiterbar wie möglich zu gestalten. Ich m�
 Alle Muss-Anforderungen sind erfüllt, nur eine Kann-Anforderung (Nr. 8, Hilfe-Befehl) ist erfüllt. Die Anwendung ist so, wie sie zur Zeit des Testens ist funktional und bedienbar.
 
 ## Auswerten
+
+### Produkt
+
+Ich habe mir [hier](#was-ist-mein-ziel) vorgenommen, dass ich eine erweiterbare Konsolenanwendung erstelle. Ich denke, dass ich dies gut erfüllen konnte. Es gibt aber definitiv noch ein paar Stellen, die ich mit strengerer Berücksichtigung von SOLID überarbeiten könnte.
+
+### Arbeitsprozess
+
+Während diesem Projekt habe ich viel neues gelernt und ich konnte dieses neue Wissen in manchen Fällen sogar direkt andwenden. Das hat mir sehr bei der Verfestigung des neuen Stoffes geholfen. (Learn by doing)
+
+Ich hatte hier auch seit längerem mal wieder die Freiheit von einem Einzelprojekt. Ich konnte nach meinen Kriterien und Standards arbeiten, was vor allem die Realisierung der Anwendung erleichtert und verschnellert hat. Damit möchte ich nicht sagen, dass die Zusammenarbeit mit anderen schlecht ist, sondern dass ich andere Sachen beachten muss. Zum Beispiel werden Entscheidungsprozesse schneller und somit sind diese weniger im Zentrum. Ich kann unter Anderem auch neue Technologien erlernen, die andere nicht zwingend interessieren.
+
+Grundsätzlich bin ich mit meinem Arbeitsprozess zufrieden, ich konnte neues lernen und meine Ziele erreichen.
